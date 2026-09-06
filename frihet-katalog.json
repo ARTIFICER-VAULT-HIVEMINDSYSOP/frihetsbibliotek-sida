@@ -12,7 +12,9 @@
     "titel": "Frihetsbibliotek · Alexandria",
     "undertitel": "Kunskapsbas · ekumeniskt kristet arv · GIDF frihetsspår",
     "ethos": "Uppmuntra. Kunskap först. Alexandria-metafor. Donate till drabbade låst. Skapare = hylla (paper).",
-    "ton": "uppmuntra"
+    "ton": "uppmuntra",
+    "tema": "hospits",
+    "messias_foretrade": true
   },
   "öb_metodlås": {
     "jamforelse_våldsdeklaration": "obligatorisk — ja/nej/saknas + citat/källa; aldrig tona ner motpartens våldsanspråk",
@@ -23,37 +25,194 @@
     }
   },
   "sektioner": [
-    {"id": "kunskap", "etikett": "Kunskap"},
-    {"id": "jamforelse", "etikett": "Jämförelse"},
-    {"id": "vittnesmal", "etikett": "Vittnesmål/karta"},
-    {"id": "metoder", "etikett": "Metoder"},
-    {"id": "traditioner", "etikett": "Traditioner"},
-    {"id": "skapare", "etikett": "Skapare (hylla)"},
-    {"id": "ladda-upp", "etikett": "Ladda upp (paper)"}
+    {
+      "id": "kunskap",
+      "etikett": "Kunskap"
+    },
+    {
+      "id": "jamforelse",
+      "etikett": "Jämförelse"
+    },
+    {
+      "id": "vittnesmal",
+      "etikett": "Vittnesmål/karta"
+    },
+    {
+      "id": "metoder",
+      "etikett": "Metoder"
+    },
+    {
+      "id": "traditioner",
+      "etikett": "Traditioner"
+    },
+    {
+      "id": "skapare",
+      "etikett": "Skapare (hylla)"
+    },
+    {
+      "id": "ladda-upp",
+      "etikett": "Ladda upp (paper)"
+    }
   ],
   "poster": [
-    {"id": "messias-foretrade", "typ": "metod", "fil": "metoder/messias-foretrade.md", "status": "paper", "etikett": "Metod · Messias företräde"},
-    {"id": "christian-prince", "typ": "person", "fil": "personer/christian-prince.md", "status": "paper", "etikett": "Person · Christian Prince"},
-    {"id": "sam-shamoun", "typ": "person", "fil": "personer/sam-shamoun.md", "status": "paper", "etikett": "Person · Sam Shamoun"},
-    {"id": "dawah-aggressiv", "typ": "tema", "fil": "teman/dawah-aggressiv.md", "status": "paper", "etikett": "Tema · aggressiv dawah"},
-    {"id": "hadith-verklighetsbas", "typ": "metod", "fil": "teman/hadith-verklighetsbas.md", "status": "paper", "etikett": "Metod · hadith-verklighetsbas"},
-    {"id": "bemotande-ramverk", "typ": "metod", "fil": "bemotande/ramverk.md", "status": "paper", "etikett": "Bemötande · ramverk"},
-    {"id": "jamforelse-index", "typ": "jamforelse", "fil": "jamforelse/INDEX.md", "status": "paper", "etikett": "Jämförelse · INDEX / compare-grid"},
-    {"id": "jamforelse-mall-claim", "typ": "jamforelse", "fil": "jamforelse/mall-claim.md", "status": "paper", "etikett": "Jämförelse · claim-mall", "obligatoriska_fält": ["våldsdeklaration", "lager_3_lagligt_självskydd"]},
-    {"id": "exempel-apostasi-saknas", "typ": "jamforelse", "fil": "jamforelse/exempel-apostasi-saknas.md", "status": "paper", "etikett": "Jämförelse · exempel apostasipressur (struktur)"},
-    {"id": "jamforelse-pipeline", "typ": "jamforelse", "fil": "jamforelse/pipeline.md", "status": "paper", "etikett": "Jämförelse · pipeline"},
-    {"id": "jamforelse-fallacies", "typ": "jamforelse", "fil": "jamforelse/fallacies.md", "status": "paper", "etikett": "Jämförelse · fallacies"},
-    {"id": "argumentkarta", "typ": "metod", "fil": "metoder/argumentkarta.md", "status": "paper", "etikett": "Metod · argumentkarta"},
-    {"id": "vald-deklaration", "typ": "metod", "fil": "metoder/vald-deklaration.md", "status": "paper", "etikett": "Metod · våldsdeklaration"},
-    {"id": "sjalvskydd-vs-aggression", "typ": "metod", "fil": "metoder/sjalvskydd-vs-aggression.md", "status": "paper", "etikett": "Metod · självskydd vs aggression (lager 1/2/3)"},
-    {"id": "abrogation-naskh", "typ": "metod", "fil": "metoder/abrogation-naskh.md", "status": "paper", "etikett": "Metod · abrogation/naskh (ÖB-lås mild→hård)"},
-    {"id": "bakat-lagverk", "typ": "metod", "fil": "metoder/bakat-lagverk.md", "status": "paper", "etikett": "Metod · rota bakåt i lagverket"},
-    {"id": "bokens-folk-bekraftelse-vs-fiende", "typ": "jamforelse", "fil": "jamforelse/bokens-folk-bekraftelse-vs-fiende.md", "status": "paper", "etikett": "Jämförelse · Folket av Boken bekräftelse vs fiende"},
-    {"id": "argumentkarta-cp-shamoun", "typ": "jamforelse", "fil": "jamforelse/argumentkarta-cp-shamoun.md", "status": "paper", "etikett": "Jämförelse · argumentkarta CP+Shamoun"},
-    {"id": "plattform-paper", "typ": "plattform", "fil": "PLATTFORM-PAPER.md", "status": "paper", "etikett": "Plattform · kunskaps-UI (paper)"},
-    {"id": "skapare-index", "typ": "skapare", "fil": "skapare/INDEX.md", "status": "paper", "etikett": "Skapare · INDEX (hylla)"},
-    {"id": "skapare-exempel-tshirt", "typ": "skapare", "fil": "skapare/exempel-tshirt-PAPER.md", "status": "paper", "etikett": "Skapare · exempel t-shirt PAPER"},
-    {"id": "ekumeniskt-alexandria", "typ": "tema", "fil": "teman/ekumeniskt-alexandria-PAPER.md", "status": "paper", "etikett": "Tema · ekumeniskt Alexandria"}
+    {
+      "id": "messias-foretrade",
+      "typ": "metod",
+      "fil": "metoder/messias-foretrade.md",
+      "status": "paper",
+      "etikett": "Metod · Messias företräde"
+    },
+    {
+      "id": "christian-prince",
+      "typ": "person",
+      "fil": "personer/christian-prince.md",
+      "status": "paper",
+      "etikett": "Person · Christian Prince"
+    },
+    {
+      "id": "sam-shamoun",
+      "typ": "person",
+      "fil": "personer/sam-shamoun.md",
+      "status": "paper",
+      "etikett": "Person · Sam Shamoun"
+    },
+    {
+      "id": "dawah-aggressiv",
+      "typ": "tema",
+      "fil": "teman/dawah-aggressiv.md",
+      "status": "paper",
+      "etikett": "Tema · aggressiv dawah"
+    },
+    {
+      "id": "hadith-verklighetsbas",
+      "typ": "metod",
+      "fil": "teman/hadith-verklighetsbas.md",
+      "status": "paper",
+      "etikett": "Metod · hadith-verklighetsbas"
+    },
+    {
+      "id": "bemotande-ramverk",
+      "typ": "metod",
+      "fil": "bemotande/ramverk.md",
+      "status": "paper",
+      "etikett": "Bemötande · ramverk"
+    },
+    {
+      "id": "jamforelse-index",
+      "typ": "jamforelse",
+      "fil": "jamforelse/INDEX.md",
+      "status": "paper",
+      "etikett": "Jämförelse · INDEX / compare-grid"
+    },
+    {
+      "id": "jamforelse-mall-claim",
+      "typ": "jamforelse",
+      "fil": "jamforelse/mall-claim.md",
+      "status": "paper",
+      "etikett": "Jämförelse · claim-mall",
+      "obligatoriska_fält": [
+        "våldsdeklaration",
+        "lager_3_lagligt_självskydd"
+      ]
+    },
+    {
+      "id": "exempel-apostasi-saknas",
+      "typ": "jamforelse",
+      "fil": "jamforelse/exempel-apostasi-saknas.md",
+      "status": "paper",
+      "etikett": "Jämförelse · exempel apostasipressur (struktur)"
+    },
+    {
+      "id": "jamforelse-pipeline",
+      "typ": "jamforelse",
+      "fil": "jamforelse/pipeline.md",
+      "status": "paper",
+      "etikett": "Jämförelse · pipeline"
+    },
+    {
+      "id": "jamforelse-fallacies",
+      "typ": "jamforelse",
+      "fil": "jamforelse/fallacies.md",
+      "status": "paper",
+      "etikett": "Jämförelse · fallacies"
+    },
+    {
+      "id": "argumentkarta",
+      "typ": "metod",
+      "fil": "metoder/argumentkarta.md",
+      "status": "paper",
+      "etikett": "Metod · argumentkarta"
+    },
+    {
+      "id": "vald-deklaration",
+      "typ": "metod",
+      "fil": "metoder/vald-deklaration.md",
+      "status": "paper",
+      "etikett": "Metod · våldsdeklaration"
+    },
+    {
+      "id": "sjalvskydd-vs-aggression",
+      "typ": "metod",
+      "fil": "metoder/sjalvskydd-vs-aggression.md",
+      "status": "paper",
+      "etikett": "Metod · självskydd vs aggression (lager 1/2/3)"
+    },
+    {
+      "id": "abrogation-naskh",
+      "typ": "metod",
+      "fil": "metoder/abrogation-naskh.md",
+      "status": "paper",
+      "etikett": "Metod · abrogation/naskh (ÖB-lås mild→hård)"
+    },
+    {
+      "id": "bakat-lagverk",
+      "typ": "metod",
+      "fil": "metoder/bakat-lagverk.md",
+      "status": "paper",
+      "etikett": "Metod · rota bakåt i lagverket"
+    },
+    {
+      "id": "bokens-folk-bekraftelse-vs-fiende",
+      "typ": "jamforelse",
+      "fil": "jamforelse/bokens-folk-bekraftelse-vs-fiende.md",
+      "status": "paper",
+      "etikett": "Jämförelse · Folket av Boken bekräftelse vs fiende"
+    },
+    {
+      "id": "argumentkarta-cp-shamoun",
+      "typ": "jamforelse",
+      "fil": "jamforelse/argumentkarta-cp-shamoun.md",
+      "status": "paper",
+      "etikett": "Jämförelse · argumentkarta CP+Shamoun"
+    },
+    {
+      "id": "plattform-paper",
+      "typ": "plattform",
+      "fil": "PLATTFORM-PAPER.md",
+      "status": "paper",
+      "etikett": "Plattform · kunskaps-UI (paper)"
+    },
+    {
+      "id": "skapare-index",
+      "typ": "skapare",
+      "fil": "skapare/INDEX.md",
+      "status": "paper",
+      "etikett": "Skapare · INDEX (hylla)"
+    },
+    {
+      "id": "skapare-exempel-tshirt",
+      "typ": "skapare",
+      "fil": "skapare/exempel-tshirt-PAPER.md",
+      "status": "paper",
+      "etikett": "Skapare · exempel t-shirt PAPER"
+    },
+    {
+      "id": "ekumeniskt-alexandria",
+      "typ": "tema",
+      "fil": "teman/ekumeniskt-alexandria-PAPER.md",
+      "status": "paper",
+      "etikett": "Tema · ekumeniskt Alexandria"
+    }
   ],
   "pekare": {
     "argumentkarta": {
@@ -83,36 +242,122 @@
     }
   },
   "skapare": [
-    {"id": "exempel-skapare-01", "namn": "Exempel · Klar budskapströja", "vad": "T-shirt / merch med tydligt frihetsbudskap (PAPER/exempel — ej verklig endorsering).", "länk": "saknas", "stöd": "hylla", "status": "PAPER/exempel", "pris": null},
-    {"id": "exempel-skapare-02", "namn": "Exempel · Offentlig kanal", "vad": "Skapare som synliggör samma kamp via offentlig länk (podcast/YouTube/shop).", "länk": "saknas", "stöd": "hylla", "status": "PAPER/exempel", "pris": null},
-    {"id": "exempel-skapare-03", "namn": "Exempel · Tryck & budskap", "vad": "Clear-message print / design som lyfter samvete och yttrandefrihet.", "länk": "saknas", "stöd": "hylla", "status": "PAPER/exempel", "pris": null}
+    {
+      "id": "exempel-skapare-01",
+      "namn": "Exempel · Klar budskapströja",
+      "vad": "T-shirt / merch med tydligt frihetsbudskap (PAPER/exempel — ej verklig endorsering).",
+      "länk": "saknas",
+      "stöd": "hylla",
+      "status": "PAPER/exempel",
+      "pris": null
+    },
+    {
+      "id": "exempel-skapare-02",
+      "namn": "Exempel · Offentlig kanal",
+      "vad": "Skapare som synliggör samma kamp via offentlig länk (podcast/YouTube/shop).",
+      "länk": "saknas",
+      "stöd": "hylla",
+      "status": "PAPER/exempel",
+      "pris": null
+    },
+    {
+      "id": "exempel-skapare-03",
+      "namn": "Exempel · Tryck & budskap",
+      "vad": "Clear-message print / design som lyfter samvete och yttrandefrihet.",
+      "länk": "saknas",
+      "stöd": "hylla",
+      "status": "PAPER/exempel",
+      "pris": null
+    }
   ],
   "uppladdning": {
     "status": "paper",
     "submit": "disabled",
     "beskrivning": "Kontinuerlig katalogintag — filer stannar paper tills ÖB live-ja."
   },
-  "mappar": ["personer/", "teman/", "bemotande/", "jamforelse/", "metoder/", "skapare/"],
+  "mappar": [
+    "personer/",
+    "teman/",
+    "bemotande/",
+    "jamforelse/",
+    "metoder/",
+    "skapare/"
+  ],
   "identitet": {
     "ton": "uppmuntra",
     "metafor": "Library of Alexandria",
     "tema": "ekumeniskt kristet",
     "inte": "buddhistisk plattformsidentitet (karta only)",
-    "oriental_orthodox_highlight": ["koptisk-ortodox", "etiopisk-ortodox"]
+    "oriental_orthodox_highlight": [
+      "koptisk-ortodox",
+      "etiopisk-ortodox"
+    ]
   },
   "traditioner": [
-    {"namn": "Katolicism", "symbol": "✠", "status": "paper"},
-    {"namn": "Ortodoxi · Öst", "symbol": "☦", "status": "paper"},
-    {"namn": "Ortodoxi · Rysk", "symbol": "☦", "status": "paper"},
-    {"namn": "Ortodoxi · Ukrainsk", "symbol": "☦", "status": "paper"},
-    {"namn": "Koptisk-ortodox", "symbol": "☦", "status": "paper", "highlight": true, "familj": "Oriental Orthodox"},
-    {"namn": "Etiopisk-ortodox", "symbol": "☦", "status": "paper", "highlight": true, "familj": "Oriental Orthodox"},
-    {"namn": "Maroniter", "symbol": "✝", "status": "paper"},
-    {"namn": "SSPX", "symbol": "✠", "status": "paper"},
-    {"namn": "Metodism", "symbol": "✝", "status": "paper"},
-    {"namn": "Protestantism", "symbol": "✝", "status": "paper"},
-    {"namn": "Oriental Orthodox · övrig", "symbol": "saknas", "status": "paper"},
-    {"namn": "Övrig kristen tradition", "symbol": "saknas", "status": "paper"}
+    {
+      "namn": "Katolicism",
+      "symbol": "✠",
+      "status": "paper"
+    },
+    {
+      "namn": "Ortodoxi · Öst",
+      "symbol": "☦",
+      "status": "paper"
+    },
+    {
+      "namn": "Ortodoxi · Rysk",
+      "symbol": "☦",
+      "status": "paper"
+    },
+    {
+      "namn": "Ortodoxi · Ukrainsk",
+      "symbol": "☦",
+      "status": "paper"
+    },
+    {
+      "namn": "Koptisk-ortodox",
+      "symbol": "☦",
+      "status": "paper",
+      "highlight": true,
+      "familj": "Oriental Orthodox"
+    },
+    {
+      "namn": "Etiopisk-ortodox",
+      "symbol": "☦",
+      "status": "paper",
+      "highlight": true,
+      "familj": "Oriental Orthodox"
+    },
+    {
+      "namn": "Maroniter",
+      "symbol": "✝",
+      "status": "paper"
+    },
+    {
+      "namn": "SSPX",
+      "symbol": "✠",
+      "status": "paper"
+    },
+    {
+      "namn": "Metodism",
+      "symbol": "✝",
+      "status": "paper"
+    },
+    {
+      "namn": "Protestantism",
+      "symbol": "✝",
+      "status": "paper"
+    },
+    {
+      "namn": "Oriental Orthodox · övrig",
+      "symbol": "saknas",
+      "status": "paper"
+    },
+    {
+      "namn": "Övrig kristen tradition",
+      "symbol": "saknas",
+      "status": "paper"
+    }
   ],
   "messias_foretrade": true
 }

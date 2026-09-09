@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sudan: vem skapar offren? · Frihetsbibliotek · UTKAST</title>
+  <meta name="description" content="UTKAST · namngivna aktörer (Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb) · orsakskedja BELAGD som mönster · inte advokatprodukt." />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#0c0b09; --stone:#17150f; --card:#1a1712; --gold:#c9a24a; --gold-soft:#e6d3a3;
+      --ink:#e8e0d0; --mute:#8f8778; --line:#2e2a22; --wine:#5c2430; --ok:#6f8f72; --danger:#b85a4a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; color:var(--ink);
+      font:400 16px/1.55 "Source Sans 3", sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(92,36,48,.2), transparent 45%),
+        radial-gradient(ellipse at 80% 0%, rgba(201,162,74,.12), transparent 40%),
+        var(--bg);
+      padding-bottom:3rem;
+    }
+    a { color:var(--gold-soft); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .stamp { font:500 .72rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-family:Fraunces,serif; color:var(--gold-soft); margin:.25rem 0; font-size:clamp(1.55rem,3.6vw,2.1rem); line-height:1.15; }
+    h2 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:1.12rem; margin:1.4rem 0 .55rem; }
+    .mute,.lede { color:var(--mute); }
+    .lede { max-width:38rem; margin:.45rem 0 0; font-size:.95rem; }
+    nav.top { position:sticky; top:0; z-index:20; backdrop-filter:blur(8px); background:rgba(12,11,9,.92); border-bottom:1px solid var(--line); }
+    nav.top .inner { max-width:52rem; margin:0 auto; padding:.5rem 1rem; display:flex; gap:.5rem 1rem; align-items:center; flex-wrap:wrap; }
+    nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
+    nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
+    nav.top a:hover { color:var(--gold-soft); text-decoration:none; }
+    .hero, section.block, article.prose { max-width:52rem; margin:0 auto; padding:1.2rem 1rem 0; }
+    .hero { padding-top:1.6rem; padding-bottom:.35rem; }
+    .ox { color:var(--gold); }
+    .grid { display:grid; gap:.65rem; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); margin-top:.35rem; }
+    article.card {
+      background:var(--card); border:1px solid var(--line); border-radius:12px;
+      padding:.85rem .95rem; min-height:5.5rem;
+    }
+    article.card .typ { font:500 .68rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.05em; text-transform:uppercase; }
+    article.card h3 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:.98rem; margin:.2rem 0 .25rem; font-weight:600; }
+    article.card p { margin:0; color:var(--mute); font-size:.86rem; }
+    .meta { font:400 .72rem "IBM Plex Mono", monospace !important; }
+    .badge {
+      display:inline-block; margin-top:.35rem; border:1px solid var(--line);
+      color:var(--mute); border-radius:999px; padding:.12rem .5rem;
+      font:500 .65rem "IBM Plex Mono", monospace;
+    }
+    .badge.ok { color:var(--ok); border-color:#3a4a3c; }
+    .badge.warn { color:var(--danger); border-color:#5a3530; }
+    table.claims {
+      width:100%; border-collapse:collapse; font-size:.88rem; margin:.4rem 0 1rem;
+      background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    }
+    table.claims th, table.claims td {
+      text-align:left; vertical-align:top; padding:.55rem .65rem;
+      border-bottom:1px solid var(--line);
+    }
+    table.claims th {
+      font:500 .68rem "IBM Plex Mono", monospace; color:var(--gold);
+      letter-spacing:.04em; text-transform:uppercase; background:var(--stone);
+    }
+    table.claims td { color:var(--ink); }
+    table.claims tr:last-child td { border-bottom:0; }
+    table.claims .st { font:500 .72rem "IBM Plex Mono", monospace; color:var(--gold); white-space:nowrap; }
+    table.claims .src { color:var(--mute); font-size:.82rem; }
+    .callout {
+      background:var(--stone); border:1px solid var(--line); border-left:3px solid var(--wine);
+      border-radius:8px; padding:.75rem .9rem; margin:1rem 0; color:var(--mute); font-size:.9rem;
+    }
+    .callout b { color:var(--gold-soft); }
+    ol.chain { margin:.4rem 0 1rem; padding-left:1.2rem; color:var(--ink); }
+    ol.chain li { margin:.35rem 0; }
+    footer.site { max-width:52rem; margin:2rem auto 0; padding:1rem; border-top:1px solid var(--line); color:var(--mute); font-size:.8rem; }
+    footer.site .stamp { margin-bottom:.35rem; }
+    code.path { font:400 .78rem "IBM Plex Mono", monospace; color:var(--gold-soft); word-break:break-all; }
+  </style>
+</head>
+<body>
+  <nav class="top" aria-label="Navigering">
+    <div class="inner">
+      <span class="brand">☦ Hospits</span>
+      <a href="frihet.html">← Frihetsbibliotek</a>
+      <a href="frihet.html#nyhet">Nyhet</a>
+      <a href="#stod">Stöd</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="stamp">UTKAST · 7 sep 2026 · paper · inte advokatprodukt</p>
+    <h1>Sudan: vem skapar offren? <span class="ox">☦</span></h1>
+    <p class="lede">Namngivna aktörer — Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb. Orsakskedja <b>BELAGD som mönster</b>. Metod: namnge · <i>ibland ≠ alltid</i> · inventera inte citat.</p>
+  </header>
+
+  <article class="prose">
+    <h2>Vem skapar offren (NAMNGA)</h2>
+    <table class="claims">
+      <thead><tr><th>Aktör</th><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Hemedti / Mohamed Hamdan Dagalo</b> (RSF)</td>
+          <td>RSF-ledare i maktkamp + krigsekonomi vs SAF</td>
+          <td class="st">BELAGD · standardförklaring</td>
+          <td class="src">Reuters / AP · paper §0–1</td>
+        </tr>
+        <tr>
+          <td><b>Al Junaid / Al Gunade</b></td>
+          <td>Dagalo-familjeföretag · guld/gruv-intäktsväg</td>
+          <td class="st">BELAGD · utredning/sanktion</td>
+          <td class="src">Global Witness · US/EU-sanktioner</td>
+        </tr>
+        <tr>
+          <td><b>Abdel Fattah al-Burhan</b> (SAF)</td>
+          <td>SAF-ledare · parallell makt + intäkter</td>
+          <td class="st">BELAGD · konsensus</td>
+          <td class="src">Reuters / AP</td>
+        </tr>
+        <tr>
+          <td><b>UAE-guldhubb / sanktionerade köpare</b> (bolag)</td>
+          <td>Handelsnav för sudanesiskt guld</td>
+          <td class="st">BELAGD handelsmönster · militärt OMSTRIDD</td>
+          <td class="src">AFP/France24 · Swissaid · US/UK-sanktion</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;">Ansvar där ägande/kontroll finns. Civila i samma folkgrupp ≠ skyldiga.</p>
+
+    <h2>Social bas (ledarskap / rekrytering)</h2>
+    <table class="claims">
+      <thead><tr><th>Organisation</th><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>RSF / Hemedti</b></td>
+          <td>Norra <b>Roryigat</b> · <b>Mahariya</b> · klan <b>Awlad Mansour</b> · Janjaweed → RSF</td>
+          <td class="st">BELAGD · biografi/ström</td>
+          <td class="src">BBC / Jamestown · paper §1b</td>
+        </tr>
+        <tr>
+          <td><b>SAF / Burhan</b></td>
+          <td>Officerelit <b>Awlad al-Bahr</b>: Ja'aliyyin, Shaigiyya, Danagla</td>
+          <td class="st">BELAGD · officerskårsmönster</td>
+          <td class="src">paper §1b</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;">Inte «alla Rizeigat» / «alla nordaraber». Trupprekrytering blandad.</p>
+
+    <h2>Offer-mönster</h2>
+    <table class="claims">
+      <thead><tr><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Fur, Masalit, Zaghawa m.fl. som mål i miliskampanjer</td>
+          <td class="st">BELAGD · mönster</td>
+          <td class="src">FN/NGO/media · paper §1b</td>
+        </tr>
+        <tr>
+          <td>Bred hungerkatastrof Sudan</td>
+          <td class="st">BELAGD</td>
+          <td class="src">FAO / WFP / UNICEF</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Orsakskedja (BELAGD som mönster)</h2>
+    <table class="claims">
+      <thead><tr><th>#</th><th>Länk</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>Centrum vs periferi</b> — flodelit / SAF mot Darfur-periferi</td><td class="st">BELAGD · översikt</td></tr>
+        <tr><td>2</td><td><b>Bashir coup-proof</b> — Janjaweed → RSF</td><td class="st">BELAGD · institutionshistoria</td></tr>
+        <tr><td>3</td><td><b>Guld + Gulf-kontrakt</b> = RSF-krigskassa (Al Junaid)</td><td class="st">BELAGD · utredning/sanktion</td></tr>
+        <tr><td>4</td><td><b>2023:</b> SAF ↔ RSF integrationsbristning (Burhan vs Hemedti)</td><td class="st">BELAGD · konsensus</td></tr>
+        <tr><td>5</td><td>Båda sidor guld; <b>UAE handelsnav BELAGD</b>; militärt UAE-stöd <b>OMSTRIDD</b></td><td class="st">handel BELAGD · militärt OMSTRIDD</td></tr>
+        <tr><td>6</td><td>Krigsekonomi: gruvor/människor &gt; civila — handling BELAGD; «samvete» OBELAGT</td><td class="st">handling BELAGD · samvete OBELAGT</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><b>En rad:</b> Blodet = namngivna generaler, milis, bolag, handelsnav.</div>
+
+    <h2>Källa</h2>
+    <p class="mute" style="font-size:.9rem;">Underlag (URL:er endast därifrån):<br />
+      <code class="path">fonder/frihetsbibliotek/kallor/sudan/PAPER-sudan-guld-aktor-uae.md</code><br />
+      Reuters · AP · Global Witness · AFP/France24 · C4ADS · UK GOV · FAO/WFP/UNICEF
+    </p>
+  </article>
+
+  
+  <section class="block">
+    <h2>ÖB-lås · slutsats</h2>
+    <p class="mute">Spåret som pekar ut <b>vem som ska lida · arbeta · nyttjas</b> är låst. Hierarki + namngivna aktörer. Guld och 2023-bristning driver parallellt — motsäger inte.</p>
+  </section>
+
+  <section class="block" id="stod">
+    <h2>Stöd · mottagning</h2>
+    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;">Krypto <b>live</b> · self-custody ÖB. Utbetalning tredjepart = <b>paper</b>. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="typ">Bitcoin</div>
+        <h3>BTC</h3>
+        <p class="meta" style="word-break:break-all;user-select:all;">bc1qnyg2h9dq5uqfy770ghuj4enc6t7rwsmw95yy3e</p>
+        <span class="badge">BECH32</span>
+      </article>
+      <article class="card">
+        <div class="typ">Ethereum</div>
+        <h3>ETH · mainnet</h3>
+        <p class="meta" style="word-break:break-all;user-select:all;">0xcAc9257112E5e3D597f6a36dEA6De1136D7F5d30</p>
+        <span class="badge">ERC-20 OK</span>
+      </article>
+      <article class="card">
+        <div class="typ">Litecoin</div>
+        <h3>LTC</h3>
+        <p class="meta" style="word-break:break-all;user-select:all;">LfsnY3Hrbk5m7PoG52SS9qhS8zGZnZMPTk</p>
+        <span class="badge">LITECOIN</span>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site">
+    <p class="stamp">☦ UTKAST · Messias först · krypto-mottagning live · utbetalning paper</p>
+    <p class="mute"><a href="frihet.html">← Tillbaka till Frihetsbibliotek</a></p>
+  </footer>
+</body>
+</html>

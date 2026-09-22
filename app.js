@@ -39,6 +39,23 @@
       put('grid-kunskap', posts.filter(p => ['person','tema','plattform','index','övrigt','deklaration','skapare'].includes(p.typ)));
       put('grid-jamforelse', posts.filter(p => p.typ === 'jamforelse'));
       put('grid-metoder', posts.filter(p => p.typ === 'metod' || p.typ === 'bemotande'));
+      put('grid-talmud', posts.filter(p => {
+        const fil = String(p.fil || '');
+        const id = String(p.id || '');
+        return fil.startsWith('kallor/judendom/') || /talmud/i.test(fil) || /talmud/i.test(id);
+      }));
+      put('grid-hadith', posts.filter(p => {
+        const fil = String(p.fil || '');
+        const id = String(p.id || '');
+        return fil === 'teman/hadith-verklighetsbas.md'
+          || fil === 'metoder/abrogation-naskh.md'
+          || fil.startsWith('metoder/counter-jihad-stick')
+          || fil.startsWith('kallor/isis/')
+          || fil === 'kallor/PAPER-metod-isis-koran-stod.md'
+          || fil === 'teman/jizyah-oversikt-paper.md'
+          || /hadith|sabaya|jizya|dabiq|naskh/i.test(fil)
+          || /hadith|sabaya|jizya|dabiq|naskh/i.test(id);
+      }));
     }
     document.addEventListener('frihet-lang', () => render(lastData));
     fetch('./frihet-katalog.json?t=' + Date.now(), {cache:'no-store'})

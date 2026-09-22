@@ -89,6 +89,8 @@
       <a href="#kunskap" data-i18n="nav.kunskap">Kunskap</a>
       <a href="#jamforelse" data-i18n="nav.jamforelse">Jämförelse</a>
       <a href="#metoder" data-i18n="nav.metoder">Metoder</a>
+      <a href="#talmud" data-i18n="nav.talmud">Talmud</a>
+      <a href="#hadith" data-i18n="nav.hadith">Hadith</a>
       <a href="#stod" data-i18n="nav.stod">Stöd</a>
       <a href="#donate" data-i18n="nav.donate">Donate</a>
     </div>
@@ -139,6 +141,17 @@
     <div class="grid" id="grid-metoder"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
   </section>
 
+  <section class="block" id="talmud">
+    <h2 data-i18n="section.talmud">Talmud</h2>
+    <p class="katalog-note" data-i18n="note.talmud">Europa ≠ Talmud. VdL-citat BELAGD som utsaga; genealogi HELT FEL/OBELAGT. Folkskuld förklaras, accepteras inte. UTKAST.</p>
+    <div class="grid" id="grid-talmud"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
+  </section>
+
+  <section class="block" id="hadith">
+    <h2 data-i18n="section.hadith">Hadith</h2>
+    <p class="katalog-note" data-i18n="note.hadith">Verklighetsbas + koran-test (KORANSTÖD vs AVVIKELSE). Ibland ≠ alltid. Metod: teman/hadith-verklighetsbas.md. UTKAST.</p>
+    <div class="grid" id="grid-hadith"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
+  </section>
 
   <section class="block" id="stod"><span id="donate" hidden></span>
     <h2 data-i18n="section.stod">Stöd · mottagning</h2>
@@ -209,6 +222,23 @@
       put('grid-kunskap', posts.filter(p => ['person','tema','plattform','index','övrigt','deklaration','skapare'].includes(p.typ)));
       put('grid-jamforelse', posts.filter(p => p.typ === 'jamforelse'));
       put('grid-metoder', posts.filter(p => p.typ === 'metod' || p.typ === 'bemotande'));
+      put('grid-talmud', posts.filter(p => {
+        const fil = String(p.fil || '');
+        const id = String(p.id || '');
+        return fil.startsWith('kallor/judendom/') || /talmud/i.test(fil) || /talmud/i.test(id);
+      }));
+      put('grid-hadith', posts.filter(p => {
+        const fil = String(p.fil || '');
+        const id = String(p.id || '');
+        return fil === 'teman/hadith-verklighetsbas.md'
+          || fil === 'metoder/abrogation-naskh.md'
+          || fil.startsWith('metoder/counter-jihad-stick')
+          || fil.startsWith('kallor/isis/')
+          || fil === 'kallor/PAPER-metod-isis-koran-stod.md'
+          || fil === 'teman/jizyah-oversikt-paper.md'
+          || /hadith|sabaya|jizya|dabiq|naskh/i.test(fil)
+          || /hadith|sabaya|jizya|dabiq|naskh/i.test(id);
+      }));
     }
     document.addEventListener('frihet-lang', () => render(lastData));
     fetch('./frihet-katalog.json?t=' + Date.now(), {cache:'no-store'})

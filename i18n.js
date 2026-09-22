@@ -30,7 +30,7 @@
 
       'hero.stamp': '☦ Salomos fattiga riddare',
       'hero.title': 'Frihetsbibliotek',
-      'hero.lede': '<b>Messias först.</b> Kunskapens hospits — skydda, undervisa, bjuda in. Stöd via krypto <b>mottagning live</b>. Utbetalning till tredjepart är ett separat spår.',
+      'hero.lede': '<b>Messias först.</b> Kunskapens hospits — skydda, undervisa, bjuda in. Stöd via krypto <b>mottagning live</b>. Utbetalning till tredjepart = separat spår.',
 
       'section.nyhet': 'Nyhet · feature',
       'feature.typ': '7 sep 2026 · Sudan',
@@ -52,19 +52,15 @@
       'note.hadith': 'Verklighetsbas + koran-test (KORANSTÖD vs AVVIKELSE). Ibland ≠ alltid. Metod: teman/hadith-verklighetsbas.md.',
       'section.stod': 'Stöd · mottagning',
       'stod.lede': 'Stöd kunskapens hospits / akut behov. Self-custody ÖB. Fel nät = risk. Utbetalning till tredjepart = separat spår.',
-      'stod.ledeSudan': 'Krypto <b>live</b> · self-custody ÖB. Utbetalning till tredjepart är ett separat spår. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.',
+      'stod.ledeSudan': 'Krypto <b>live</b> · self-custody ÖB. Utbetalning tredjepart = <b>separat spår</b>. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.',
       'stod.eth': 'ETH · mainnet',
 
-      'footer.stamp': '☦ Messias först · icke-våld · krypto-mottagning live',
-      'footer.stampSudan': '☦ Messias först · krypto-mottagning live',
+      'footer.stamp': '☦ Messias först · icke-våld · krypto-mottagning live · utbetalning separat spår',
+      'footer.stampSudan': '☦ Messias först · krypto-mottagning live · utbetalning separat spår',
       'footer.back': '← Tillbaka till Frihetsbibliotek',
       'footer.katalogNote': 'Katalogetiketter är på svenska.',
       'footer.loading': 'katalog…',
       'footer.meta': '{n} poster · {date}',
-      'detail.note': 'Öppna för utredning. Valvet stannar privat.',
-      'chips.alla': 'Alla',
-      'chips.aria': 'Filtrera på typ',
-      'badge.read': 'LÄS →',
       'empty.loading': 'laddar…',
       'empty.missing': 'saknas',
 
@@ -83,7 +79,7 @@
       'typ.post': 'post',
 
       'lang.label': 'Språk',
-      'meta.description': 'Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart är ett separat spår.',
+      'meta.description': 'Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart = separat spår.',
       'doc.title': 'Frihetsbibliotek · Hospits',
 
       'sudan.navStamp': '7 sep 2026 · inte advokatprodukt',
@@ -111,11 +107,19 @@
       'featureIndex.stamp': 'ÖB «Kör» · live på lokal sida',
       'featureIndex.title': 'Fem artiklar · Sudan · Etiopien · Eritrea',
       'featureIndex.lede': 'Kärna låst. Nigeria bara om det lägger till. Term: <b>ägbar underordnad</b> — beskrivs, godkänns inte.',
-      'featureIndex.footer': 'BTC/ETH/LTC mottagning: <a href="../frihet.html#stod">#stod</a>',
+      'featureIndex.footer': 'BTC/ETH/LTC mottagning: <a href="../frihet.html#stod">#stod</a> · utbetalning separat spår',
       'featureIndex.docTitle': 'Feature-serie · 5 artiklar · Frihetsbibliotek',
 
       'featureArt.stamp': 'Feature-serie · ÖB «Kör» 7 sep 2026 · inte advokatprodukt',
-      'featureArt.navSerie': 'Serie'
+      'featureArt.navSerie': 'Serie',
+
+      'post.back': '← Tillbaka till katalog',
+      'post.missing': 'Posten hittades inte.',
+      'post.vaultNote': 'Fullständig text ligger i valvet. Här visas etikett, typ och filväg.',
+      'post.typ': 'Typ',
+      'post.fil': 'Fil',
+      'post.loading': 'laddar…',
+      'post.docTitle': 'Katalogpost · Frihetsbibliotek'
     },
 
     en: {
@@ -138,7 +142,7 @@
 
       'hero.stamp': '☦ Solomon’s poor knights',
       'hero.title': 'Freedom Library',
-      'hero.lede': '<b>Messiah first.</b> A hospice of knowledge — protect, teach, invite. Support via crypto <b>live reception</b>. Third-party payout is a separate track.',
+      'hero.lede': '<b>Messiah first.</b> A hospice of knowledge — protect, teach, invite. Support via crypto <b>live reception</b>. Third-party payout = separate track.',
 
       'section.nyhet': 'News · feature',
       'feature.typ': '7 Sep 2026 · Sudan',
@@ -160,19 +164,15 @@
       'note.hadith': 'Reality base + Qur’an test (QURAN-SUPPORT vs DEVIATION). Sometimes ≠ always. Method: teman/hadith-verklighetsbas.md.',
       'section.stod': 'Support · reception',
       'stod.lede': 'Support the hospice of knowledge / urgent need. Self-custody as standing order. Wrong network = risk. Third-party payout = separate track.',
-      'stod.ledeSudan': 'Crypto <b>live</b> · self-custody standing order. Third-party payout is a separate track. Standing split: <b>40% food Sudan</b>. Wrong network = risk.',
+      'stod.ledeSudan': 'Crypto <b>live</b> · self-custody standing order. Third-party payout = <b>separate track</b>. Standing split: <b>40% food Sudan</b>. Wrong network = risk.',
       'stod.eth': 'ETH · mainnet',
 
-      'footer.stamp': '☦ Messiah first · non-violence · crypto reception live',
-      'footer.stampSudan': '☦ Messiah first · crypto reception live',
+      'footer.stamp': '☦ Messiah first · non-violence · crypto reception live · payout separate track',
+      'footer.stampSudan': '☦ Messiah first · crypto reception live · payout separate track',
       'footer.back': '← Back to Freedom Library',
       'footer.katalogNote': 'Catalog labels remain in Swedish.',
       'footer.loading': 'catalog…',
       'footer.meta': '{n} entries · {date}',
-      'detail.note': 'Open for inquiry. The vault stays private.',
-      'chips.alla': 'All',
-      'chips.aria': 'Filter by type',
-      'badge.read': 'READ →',
       'empty.loading': 'loading…',
       'empty.missing': 'none',
 
@@ -191,7 +191,7 @@
       'typ.post': 'post',
 
       'lang.label': 'Language',
-      'meta.description': 'Hospice of knowledge — Messiah first. Solomon’s poor knights. Crypto reception live (BTC/ETH/LTC). Third-party payout is a separate track.',
+      'meta.description': 'Hospice of knowledge — Messiah first. Solomon’s poor knights. Crypto reception live (BTC/ETH/LTC). Third-party payout = separate track.',
       'doc.title': 'Freedom Library · Hospice',
 
       'sudan.navStamp': '7 Sep 2026 · not a legal product',
@@ -219,11 +219,19 @@
       'featureIndex.stamp': 'Standing order «Go» · live on local page',
       'featureIndex.title': 'Five articles · Sudan · Ethiopia · Eritrea',
       'featureIndex.lede': 'Core locked. Nigeria only if it adds. Term: <b>ownable subordinate</b> — described, not endorsed.',
-      'featureIndex.footer': 'BTC/ETH/LTC reception: <a href="../frihet.html#stod">#stod</a>',
+      'featureIndex.footer': 'BTC/ETH/LTC reception: <a href="../frihet.html#stod">#stod</a> · payout separate track',
       'featureIndex.docTitle': 'Feature series · 5 articles · Freedom Library',
 
       'featureArt.stamp': 'Feature series · standing order «Go» 7 Sep 2026 · not a legal product',
-      'featureArt.navSerie': 'Series'
+      'featureArt.navSerie': 'Series',
+
+      'post.back': '← Back to catalog',
+      'post.missing': 'Entry not found.',
+      'post.vaultNote': 'The full text is in the vault. This page shows the label, type, and file path.',
+      'post.typ': 'Type',
+      'post.fil': 'File',
+      'post.loading': 'loading…',
+      'post.docTitle': 'Catalog entry · Freedom Library'
     },
 
     bg: {
@@ -246,7 +254,7 @@
 
       'hero.stamp': '☦ Бедните рицари на Соломон',
       'hero.title': 'Библиотека на свободата',
-      'hero.lede': '<b>Месия първи.</b> Хоспис на знанието — пази, учи, кани. Подкрепа чрез крипто <b>прием на живо</b>. Изплащането към трета страна е отделен път.',
+      'hero.lede': '<b>Месия първи.</b> Хоспис на знанието — пази, учи, кани. Подкрепа чрез крипто <b>прием на живо</b>. Изплащане към трета страна = отделен път.',
 
       'section.nyhet': 'Новина · feature',
       'feature.typ': '7 сеп 2026 · Судан',
@@ -268,19 +276,15 @@
       'note.hadith': 'База в реалността + Коран-тест (КОРАНСКА ПОДКРЕПА vs ОТКЛОНЕНИЕ). Понякога ≠ винаги. Метод: teman/hadith-verklighetsbas.md.',
       'section.stod': 'Подкрепа · прием',
       'stod.lede': 'Подкрепи хосписа на знанието / спешна нужда. Self-custody като постоянна заповед. Грешна мрежа = риск. Изплащане към трета страна = отделен път.',
-      'stod.ledeSudan': 'Крипто <b>на живо</b> · self-custody. Изплащането към трета страна е отделен път. Заключен дял: <b>40 % храна Судан</b>. Грешна мрежа = риск.',
+      'stod.ledeSudan': 'Крипто <b>на живо</b> · self-custody. Изплащане към трета страна = <b>отделен път</b>. Заключен дял: <b>40 % храна Судан</b>. Грешна мрежа = риск.',
       'stod.eth': 'ETH · mainnet',
 
-      'footer.stamp': '☦ Месия първи · ненасилие · крипто-прием на живо',
-      'footer.stampSudan': '☦ Месия първи · крипто-прием на живо',
+      'footer.stamp': '☦ Месия първи · ненасилие · крипто-прием на живо · изплащане отделен път',
+      'footer.stampSudan': '☦ Месия първи · крипто-прием на живо · изплащане отделен път',
       'footer.back': '← Назад към Библиотека на свободата',
       'footer.katalogNote': 'Етикетите в каталога остават на шведски.',
       'footer.loading': 'каталог…',
       'footer.meta': '{n} записа · {date}',
-      'detail.note': 'Отвори за проверка. Хранилището остава частно.',
-      'chips.alla': 'Всички',
-      'chips.aria': 'Филтър по тип',
-      'badge.read': 'ЧЕТИ →',
       'empty.loading': 'зареждане…',
       'empty.missing': 'липсва',
 
@@ -299,7 +303,7 @@
       'typ.post': 'запис',
 
       'lang.label': 'Език',
-      'meta.description': 'Хоспис на знанието — Месия първи. Бедните рицари на Соломон. Крипто-прием на живо (BTC/ETH/LTC). Изплащането към трета страна е отделен път.',
+      'meta.description': 'Хоспис на знанието — Месия първи. Бедните рицари на Соломон. Крипто-прием на живо (BTC/ETH/LTC). Изплащане към трета страна = отделен път.',
       'doc.title': 'Библиотека на свободата · Хоспис',
 
       'sudan.navStamp': '7 сеп 2026 · не е правен продукт',
@@ -327,11 +331,19 @@
       'featureIndex.stamp': 'Постоянна заповед «Давай» · на живо на локалната страница',
       'featureIndex.title': 'Пет статии · Судан · Етиопия · Еритрея',
       'featureIndex.lede': 'Ядрото е заключено. Нигерия само ако добавя. Термин: <b>притежаван подчинен</b> — описва се, не се одобрява.',
-      'featureIndex.footer': 'BTC/ETH/LTC прием: <a href="../frihet.html#stod">#stod</a>',
+      'featureIndex.footer': 'BTC/ETH/LTC прием: <a href="../frihet.html#stod">#stod</a> · изплащане отделен път',
       'featureIndex.docTitle': 'Feature-серия · 5 статии · Библиотека на свободата',
 
       'featureArt.stamp': 'Feature-серия · постоянна заповед «Давай» 7 сеп 2026 · не е правен продукт',
-      'featureArt.navSerie': 'Серия'
+      'featureArt.navSerie': 'Серия',
+
+      'post.back': '← Назад към каталога',
+      'post.missing': 'Записът не е намерен.',
+      'post.vaultNote': 'Пълният текст е в хранилището. Тук се виждат етикет, тип и път до файла.',
+      'post.typ': 'Тип',
+      'post.fil': 'Файл',
+      'post.loading': 'зареждане…',
+      'post.docTitle': 'Каталожен запис · Библиотека на свободата'
     }
   };
 

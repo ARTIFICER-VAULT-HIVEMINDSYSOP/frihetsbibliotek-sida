@@ -20,7 +20,14 @@
     h2 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:1.15rem; margin:0 0 .6rem; }
     .mute,.lede { color:var(--mute); }
     .lede { max-width:36rem; margin:.45rem 0 0; font-size:.95rem; }
-    nav.top { position:sticky; top:0; z-index:20; backdrop-filter:blur(8px); background:rgba(12,11,9,.92); border-bottom:1px solid var(--line); }
+    nav.top {
+      position:sticky; top:0; z-index:20;
+      background:rgba(23,21,15,.52);
+      backdrop-filter:blur(18px) saturate(1.35);
+      -webkit-backdrop-filter:blur(18px) saturate(1.35);
+      border-bottom:1px solid rgba(201,162,74,.28);
+      box-shadow:0 8px 32px rgba(0,0,0,.38), inset 0 1px 0 rgba(230,211,163,.12);
+    }
     nav.top .inner { max-width:52rem; margin:0 auto; padding:.5rem 1rem; display:flex; gap:.5rem 1rem; align-items:center; flex-wrap:wrap; }
     nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
     nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
@@ -40,9 +47,42 @@
     .hero { padding-top:1.75rem; padding-bottom:.5rem; }
     .ox { color:var(--gold); }
     .grid { display:grid; gap:.65rem; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); margin-top:.35rem; }
-    article.card {
-      background:var(--card); border:1px solid var(--line); border-radius:12px;
-      padding:.85rem .95rem; min-height:5.5rem;
+    article.card,
+    a.feature-card:not(:has(article.card)) {
+      position:relative; overflow:hidden;
+      background:linear-gradient(165deg, rgba(230,211,163,.10), rgba(23,21,15,.42) 38%, rgba(12,11,9,.55));
+      border:1px solid rgba(201,162,74,.28);
+      border-radius:12px;
+      backdrop-filter:blur(16px) saturate(1.25);
+      -webkit-backdrop-filter:blur(16px) saturate(1.25);
+      box-shadow:inset 0 1px 0 rgba(230,211,163,.22), 0 12px 28px rgba(0,0,0,.32);
+      transition:border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+    }
+    article.card { padding:.85rem .95rem; min-height:5.5rem; }
+    a.feature-card:not(:has(article.card)) { display:block; padding:1rem 1.05rem; margin-top:.5rem; }
+    article.card::after,
+    a.feature-card:not(:has(article.card))::after {
+      content:""; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(115deg, transparent 36%, rgba(230,211,163,.16) 48%, transparent 60%);
+      transform:translateX(-130%);
+    }
+    a.card-link, a.feature-card { cursor:pointer; }
+    a.card-link:hover article.card,
+    a.feature-card:hover article.card,
+    article.card:hover,
+    a.feature-card:not(:has(article.card)):hover {
+      border-color:rgba(201,162,74,.75);
+      box-shadow:inset 0 1px 0 rgba(230,211,163,.34), 0 0 0 1px rgba(201,162,74,.28), 0 0 22px rgba(201,162,74,.22), 0 14px 32px rgba(0,0,0,.4);
+      transform:translateY(-2px);
+    }
+    a.card-link:hover article.card::after,
+    a.feature-card:hover article.card::after,
+    article.card:hover::after,
+    a.feature-card:not(:has(article.card)):hover::after { animation:glass-shine .75s ease; }
+    @keyframes glass-shine { from { transform:translateX(-130%); } to { transform:translateX(130%); } }
+    @media (prefers-reduced-motion: reduce) {
+      article.card, a.feature-card:not(:has(article.card)) { transition:none; }
+      article.card::after, a.feature-card:not(:has(article.card))::after { display:none; }
     }
     article.card .typ { font:500 .68rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.05em; text-transform:uppercase; }
     article.card h3 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:.98rem; margin:.2rem 0 .25rem; font-weight:600; }
@@ -53,7 +93,15 @@
       color:var(--mute); border-radius:999px; padding:.12rem .5rem;
       font:500 .65rem "IBM Plex Mono", monospace;
     }
+    .badge.paper { color:var(--ok); border-color:#3a4a3c; }
+    .badge.utkast { color:var(--gold); border-color:#4a3f28; }
     .empty { color:var(--mute); font-size:.88rem; }
     footer.site { max-width:52rem; margin:2rem auto 0; padding:1rem; border-top:1px solid var(--line); color:var(--mute); font-size:.8rem; }
     footer.site .stamp { margin-bottom:.35rem; }
   
+    a.card-link {
+      display:block; text-decoration:none; color:inherit; cursor:pointer;
+    }
+    a.card-link:hover { text-decoration:none; }
+    a.card-link:hover article.card { border-color:var(--gold); }
+    a.card-link:hover h3 { text-decoration:underline; }

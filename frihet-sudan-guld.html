@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n-doc="sudan.docTitle">Sudan: vem skapar offren? · Frihetsbibliotek</title>
-  <meta name="description" content="namngivna aktörer (Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb) · orsakskedja BELAGD som mönster · inte advokatprodukt." />
+  <meta name="description" content="Namngivna aktörer (Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb) · orsakskedja BELAGD som mönster · inte advokatprodukt." />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -28,7 +28,14 @@
     h2 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:1.12rem; margin:1.4rem 0 .55rem; }
     .mute,.lede { color:var(--mute); }
     .lede { max-width:38rem; margin:.45rem 0 0; font-size:.95rem; }
-    nav.top { position:sticky; top:0; z-index:20; backdrop-filter:blur(8px); background:rgba(12,11,9,.92); border-bottom:1px solid var(--line); }
+    nav.top {
+      position:sticky; top:0; z-index:20;
+      background:rgba(23,21,15,.52);
+      backdrop-filter:blur(18px) saturate(1.35);
+      -webkit-backdrop-filter:blur(18px) saturate(1.35);
+      border-bottom:1px solid rgba(201,162,74,.28);
+      box-shadow:0 8px 32px rgba(0,0,0,.38), inset 0 1px 0 rgba(230,211,163,.12);
+    }
     nav.top .inner { max-width:52rem; margin:0 auto; padding:.5rem 1rem; display:flex; gap:.5rem 1rem; align-items:center; flex-wrap:wrap; }
     nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
     nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
@@ -49,8 +56,30 @@
     .ox { color:var(--gold); }
     .grid { display:grid; gap:.65rem; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); margin-top:.35rem; }
     article.card {
-      background:var(--card); border:1px solid var(--line); border-radius:12px;
+      position:relative; overflow:hidden;
+      background:linear-gradient(165deg, rgba(230,211,163,.10), rgba(23,21,15,.42) 38%, rgba(12,11,9,.55));
+      border:1px solid rgba(201,162,74,.28); border-radius:12px;
       padding:.85rem .95rem; min-height:5.5rem;
+      backdrop-filter:blur(16px) saturate(1.25);
+      -webkit-backdrop-filter:blur(16px) saturate(1.25);
+      box-shadow:inset 0 1px 0 rgba(230,211,163,.22), 0 12px 28px rgba(0,0,0,.32);
+      transition:border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+    }
+    article.card::after {
+      content:""; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(115deg, transparent 36%, rgba(230,211,163,.16) 48%, transparent 60%);
+      transform:translateX(-130%);
+    }
+    article.card:hover {
+      border-color:rgba(201,162,74,.75);
+      box-shadow:inset 0 1px 0 rgba(230,211,163,.34), 0 0 22px rgba(201,162,74,.22), 0 14px 32px rgba(0,0,0,.4);
+      transform:translateY(-2px);
+    }
+    article.card:hover::after { animation:glass-shine .75s ease; }
+    @keyframes glass-shine { from { transform:translateX(-130%); } to { transform:translateX(130%); } }
+    @media (prefers-reduced-motion: reduce) {
+      article.card { transition:none; }
+      article.card::after { display:none; }
     }
     article.card .typ { font:500 .68rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.05em; text-transform:uppercase; }
     article.card h3 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:.98rem; margin:.2rem 0 .25rem; font-weight:600; }
@@ -90,7 +119,6 @@
     footer.site .stamp { margin-bottom:.35rem; }
     code.path { font:400 .78rem "IBM Plex Mono", monospace; color:var(--gold-soft); word-break:break-all; }
   </style>
-<link rel="stylesheet" href="glass.css" />
 </head>
 <body>
   <nav class="top" data-i18n-aria="nav.aria" aria-label="Navigering">
@@ -117,7 +145,7 @@
           <td><b>Hemedti / Mohamed Hamdan Dagalo</b> (RSF)</td>
           <td>RSF-ledare i maktkamp + krigsekonomi vs SAF</td>
           <td class="st">BELAGD · standardförklaring</td>
-          <td class="src">Reuters / AP · §0–1</td>
+          <td class="src">Reuters / AP · paper §0–1</td>
         </tr>
         <tr>
           <td><b>Al Junaid / Al Gunade</b></td>
@@ -149,13 +177,13 @@
           <td><b>RSF / Hemedti</b></td>
           <td>Norra <b>Roryigat</b> · <b>Mahariya</b> · klan <b>Awlad Mansour</b> · Janjaweed → RSF</td>
           <td class="st">BELAGD · biografi/ström</td>
-          <td class="src">BBC / Jamestown · §1b</td>
+          <td class="src">BBC / Jamestown · paper §1b</td>
         </tr>
         <tr>
           <td><b>SAF / Burhan</b></td>
           <td>Officerelit <b>Awlad al-Bahr</b>: Ja'aliyyin, Shaigiyya, Danagla</td>
           <td class="st">BELAGD · officerskårsmönster</td>
-          <td class="src">§1b</td>
+          <td class="src">paper §1b</td>
         </tr>
       </tbody>
     </table>
@@ -168,7 +196,7 @@
         <tr>
           <td>Fur, Masalit, Zaghawa m.fl. som mål i miliskampanjer</td>
           <td class="st">BELAGD · mönster</td>
-          <td class="src">FN/NGO/media · §1b</td>
+          <td class="src">FN/NGO/media · paper §1b</td>
         </tr>
         <tr>
           <td>Bred hungerkatastrof Sudan</td>
@@ -194,7 +222,7 @@
 
     <h2 data-i18n="sudan.h2.source">Källa</h2>
     <p class="mute" style="font-size:.9rem;"><span data-i18n="sudan.sourceLead">Underlag (URL:er endast därifrån):</span><br />
-      <code class="path">fonder/frihetsbibliotek/kallor/sudan/sudan-guld-aktor-uae.md</code><br />
+      <code class="path">fonder/frihetsbibliotek/kallor/sudan/PAPER-sudan-guld-aktor-uae.md</code><br />
       Reuters · AP · Global Witness · AFP/France24 · C4ADS · UK GOV · FAO/WFP/UNICEF
     </p>
   </article>
@@ -207,7 +235,7 @@
 
   <section class="block" id="stod">
     <h2 data-i18n="section.stod">Stöd · mottagning</h2>
-    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;" data-i18n-html="stod.ledeSudan">Krypto <b>live</b> · self-custody ÖB. Utbetalning till tredjepart är ett separat spår. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.</p>
+    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;" data-i18n-html="stod.ledeSudan">Krypto <b>live</b> · self-custody ÖB. Utbetalning till tredjepart = separat spår. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.</p>
     <div class="grid">
       <article class="card">
         <div class="typ">Bitcoin</div>
@@ -231,7 +259,7 @@
   </section>
 
   <footer class="site">
-    <p class="stamp" data-i18n="footer.stampSudan">☦ Messias först · krypto-mottagning live</p>
+    <p class="stamp" data-i18n="footer.stampSudan">☦ Messias först · krypto-mottagning live · utbetalning separat spår</p>
     <p class="mute"><a href="frihet.html" data-i18n="footer.back">← Tillbaka till Frihetsbibliotek</a></p>
   </footer>
   <script src="i18n.js"></script>

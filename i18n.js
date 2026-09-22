@@ -21,6 +21,7 @@
       'nav.metoder': 'Metoder',
       'nav.stod': 'Stöd',
       'nav.donate': 'Donate',
+      'nav.alla': 'Alla poster',
       'nav.serie': 'Serie',
       'nav.huvudfeature': 'Huvudfeature',
       'nav.huvudfeatureSudan': 'Huvudfeature Sudan',
@@ -39,6 +40,7 @@
       'series.body': 'El Fasher · Zamzam · Masalit-retorik · St Arsema · Eritrea FoRB',
       'series.badge': 'UTKAST · LÄS →',
 
+      'section.alla': 'Alla poster · full katalog',
       'section.kunskap': 'Kunskap',
       'section.jamforelse': 'Jämförelse',
       'section.metoder': 'Metoder',
@@ -63,6 +65,11 @@
       'typ.plattform': 'Plattform',
       'typ.bemotande': 'Bemötande',
       'typ.skapare': 'Skapare',
+      'typ.kalla': 'Källa',
+      'typ.deklaration': 'Deklaration',
+      'typ.vittnesmal': 'Vittnesmål',
+      'typ.index': 'Index',
+      'typ.ovrig': 'Övrigt',
       'typ.post': 'post',
 
       'lang.label': 'Språk',
@@ -112,6 +119,7 @@
       'nav.metoder': 'Methods',
       'nav.stod': 'Support',
       'nav.donate': 'Donate',
+      'nav.alla': 'All entries',
       'nav.serie': 'Series',
       'nav.huvudfeature': 'Main feature',
       'nav.huvudfeatureSudan': 'Main feature · Sudan',
@@ -130,6 +138,7 @@
       'series.body': 'El Fasher · Zamzam · Masalit rhetoric · St Arsema · Eritrea FoRB',
       'series.badge': 'DRAFT · READ →',
 
+      'section.alla': 'All entries · full catalog',
       'section.kunskap': 'Knowledge',
       'section.jamforelse': 'Compare',
       'section.metoder': 'Methods',
@@ -154,6 +163,11 @@
       'typ.plattform': 'Platform',
       'typ.bemotande': 'Response',
       'typ.skapare': 'Maker',
+      'typ.kalla': 'Source',
+      'typ.deklaration': 'Declaration',
+      'typ.vittnesmal': 'Witness',
+      'typ.index': 'Index',
+      'typ.ovrig': 'Other',
       'typ.post': 'post',
 
       'lang.label': 'Language',
@@ -203,6 +217,7 @@
       'nav.metoder': 'Методи',
       'nav.stod': 'Подкрепа',
       'nav.donate': 'Donate',
+      'nav.alla': 'Всички записи',
       'nav.serie': 'Серия',
       'nav.huvudfeature': 'Главна статия',
       'nav.huvudfeatureSudan': 'Главна статия · Судан',
@@ -221,6 +236,7 @@
       'series.body': 'El Fasher · Zamzam · реторика Masalit · St Arsema · Еритрея FoRB',
       'series.badge': 'ЧЕРНОВА · ЧЕТИ →',
 
+      'section.alla': 'Всички записи · пълен каталог',
       'section.kunskap': 'Знание',
       'section.jamforelse': 'Сравнение',
       'section.metoder': 'Методи',
@@ -245,6 +261,11 @@
       'typ.plattform': 'Платформа',
       'typ.bemotande': 'Отговор',
       'typ.skapare': 'Творец',
+      'typ.kalla': 'Източник',
+      'typ.deklaration': 'Декларация',
+      'typ.vittnesmal': 'Свидетелство',
+      'typ.index': 'Индекс',
+      'typ.ovrig': 'Друго',
       'typ.post': 'запис',
 
       'lang.label': 'Език',
@@ -380,7 +401,12 @@
       jamforelse: 'typ.jamforelse',
       plattform: 'typ.plattform',
       bemotande: 'typ.bemotande',
-      skapare: 'typ.skapare'
+      skapare: 'typ.skapare',
+      kalla: 'typ.kalla',
+      deklaration: 'typ.deklaration',
+      vittnesmal: 'typ.vittnesmal',
+      index: 'typ.index',
+      'övrigt': 'typ.ovrig'
     };
     return t(map[typ] || 'typ.post');
   }

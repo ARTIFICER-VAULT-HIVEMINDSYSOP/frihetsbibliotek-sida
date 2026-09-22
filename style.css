@@ -53,6 +53,8 @@
       color:var(--mute); border-radius:999px; padding:.12rem .5rem;
       font:500 .65rem "IBM Plex Mono", monospace;
     }
+    .badge.paper { color:var(--ok); border-color:#3a4a3c; }
+    .badge.utkast { color:var(--gold); border-color:#4a3f28; }
     .empty { color:var(--mute); font-size:.88rem; }
     footer.site { max-width:52rem; margin:2rem auto 0; padding:1rem; border-top:1px solid var(--line); color:var(--mute); font-size:.8rem; }
     footer.site .stamp { margin-bottom:.35rem; }

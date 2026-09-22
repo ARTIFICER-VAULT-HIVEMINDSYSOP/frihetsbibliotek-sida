@@ -2,7 +2,7 @@
 <html lang="sv"><head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Feature-serie · 5 artiklar · Frihetsbibliotek</title>
+<title data-i18n-doc="featureIndex.docTitle">Feature-serie · 5 artiklar · Frihetsbibliotek</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
 <style>
 :root{--bg:#0c0b09;--stone:#17150f;--card:#1a1712;--gold:#c9a24a;--gold-soft:#e6d3a3;--ink:#e8e0d0;--mute:#8f8778;--line:#2e2a22;--wine:#5c2430}
@@ -16,7 +16,13 @@ table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.4rem 0 1rem;b
 th,td{text-align:left;vertical-align:top;padding:.5rem .65rem;border-bottom:1px solid var(--line)}
 th{font:500 .68rem "IBM Plex Mono",monospace;color:var(--gold);text-transform:uppercase;background:var(--stone)}
 tr:last-child td{border-bottom:0}.st{font:500 .72rem "IBM Plex Mono",monospace;color:var(--gold)}
-nav a{font:500 .78rem "IBM Plex Mono",monospace;color:var(--mute);margin-right:.9rem}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;margin-bottom:.35rem}
+nav a{font:500 .78rem "IBM Plex Mono",monospace;color:var(--mute);margin-right:0}
+.lang-switch{margin-left:auto;display:inline-flex;align-items:center;gap:.15rem;font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.04em}
+.lang-sep{color:var(--line);user-select:none;padding:0 .05rem}
+.lang-btn{background:transparent;border:0;color:var(--mute);cursor:pointer;font:inherit;letter-spacing:.06em;padding:.15rem .3rem;border-radius:4px}
+.lang-btn:hover{color:var(--gold-soft)}
+.lang-btn.is-active{color:var(--gold);box-shadow:inset 0 -1px 0 var(--gold)}
 .callout{background:var(--stone);border-left:3px solid var(--wine);border-radius:8px;padding:.7rem .85rem;margin:1rem 0;color:var(--mute);font-size:.9rem}
 ul{color:var(--ink)}code{font:400 .8rem "IBM Plex Mono",monospace;color:var(--gold-soft)}
 
@@ -25,14 +31,20 @@ ul{color:var(--ink)}code{font:400 .8rem "IBM Plex Mono",monospace;color:var(--go
 .badge{display:inline-block;font:500 .65rem "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:999px;padding:.1rem .45rem;color:var(--mute);margin-top:.35rem}
 </style></head><body>
 <div class="wrap">
-<nav><a href="../frihet.html">← Hospits</a><a href="../frihet-sudan-guld.html">Huvudfeature Sudan</a><a href="../frihet.html#stod">Stöd</a></nav>
-<p class="stamp">UTKAST · ÖB «Kör» · live på lokal sida</p>
-<h1>Fem artiklar · Sudan · Etiopien · Eritrea</h1>
-<p class="lede">Kärna låst. Nigeria bara om det lägger till. Term: <b>ägbar underordnad</b> — beskrivs, godkänns inte.</p>
+<nav>
+  <a href="../frihet.html" data-i18n="nav.back">← Hospits</a>
+  <a href="../frihet-sudan-guld.html" data-i18n="nav.huvudfeatureSudan">Huvudfeature Sudan</a>
+  <a href="../frihet.html#stod" data-i18n="nav.stod">Stöd</a>
+</nav>
+<p class="stamp" data-i18n="featureIndex.stamp">UTKAST · ÖB «Kör» · live på lokal sida</p>
+<h1 data-i18n="featureIndex.title">Fem artiklar · Sudan · Etiopien · Eritrea</h1>
+<p class="lede" data-i18n-html="featureIndex.lede">Kärna låst. Nigeria bara om det lägger till. Term: <b>ägbar underordnad</b> — beskrivs, godkänns inte.</p>
 <a class="card" href="01-sudan-el-fasher-rsf.html"><h2 style="margin:0 0 .35rem;font-size:1.05rem">1 · Sudan · El Fasher — RSF efter belägring (okt 2025)</h2><span class="badge">01-sudan-el-fasher-rsf.md</span></a>
 <a class="card" href="02-sudan-zamzam-idp.html"><h2 style="margin:0 0 .35rem;font-size:1.05rem">2 · Sudan · Zamzam IDP-läger (11–13 apr 2025)</h2><span class="badge">02-sudan-zamzam-idp.md</span></a>
 <a class="card" href="03-sudan-masalit-retorik-sexuellt-vald.html"><h2 style="margin:0 0 .35rem;font-size:1.05rem">3 · Sudan · Masalit / sexuellt våld + «arabiska barn»-retorik</h2><span class="badge">03-sudan-masalit-retorik-sexuellt-vald.md</span></a>
 <a class="card" href="04-etiopien-arsema-kloster.html"><h2 style="margin:0 0 .35rem;font-size:1.05rem">4 · Etiopien · St Arsema-klostret (22 jul 2026) — kultur/tro</h2><span class="badge">04-etiopien-arsema-kloster.md</span></a>
 <a class="card" href="05-eritrea-kyrkokontroll-nigeria-regel.html"><h2 style="margin:0 0 .35rem;font-size:1.05rem">5 · Eritrea · statlig kyrkokontroll + regel Nigeria</h2><span class="badge">05-eritrea-kyrkokontroll-nigeria-regel.md</span></a>
-<p class="mute" style="font-size:.85rem;margin-top:1.2rem">BTC/ETH/LTC mottagning: <a href="../frihet.html#stod">#stod</a> · utbetalning paper</p>
-</div></body></html>
+<p class="mute" style="font-size:.85rem;margin-top:1.2rem" data-i18n-html="featureIndex.footer">BTC/ETH/LTC mottagning: <a href="../frihet.html#stod">#stod</a> · utbetalning paper</p>
+</div>
+<script src="../i18n.js"></script>
+</body></html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Frihetsbibliotek · Hospits · PAPER</title>
-  <meta name="description" content="Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart paper." />
+  <title data-i18n-doc="doc.title">Frihetsbibliotek · Hospits · PAPER</title>
+  <meta name="description" data-i18n-content="meta.description" content="Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart paper." />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -33,6 +33,17 @@
     nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
     nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
     nav.top a:hover { color:var(--gold-soft); text-decoration:none; }
+    .lang-switch {
+      margin-left:auto; display:inline-flex; align-items:center; gap:.15rem;
+      font:500 .72rem "IBM Plex Mono", monospace; letter-spacing:.04em;
+    }
+    .lang-sep { color:var(--line); user-select:none; padding:0 .05rem; }
+    .lang-btn {
+      background:transparent; border:0; color:var(--mute); cursor:pointer;
+      font:inherit; letter-spacing:.06em; padding:.15rem .3rem; border-radius:4px;
+    }
+    .lang-btn:hover { color:var(--gold-soft); }
+    .lang-btn.is-active { color:var(--gold); box-shadow:inset 0 -1px 0 var(--gold); }
     .hero, section.block { max-width:52rem; margin:0 auto; padding:1.4rem 1rem 0; }
     .hero { padding-top:1.75rem; padding-bottom:.5rem; }
     .ox { color:var(--gold); }
@@ -53,6 +64,7 @@
     .empty { color:var(--mute); font-size:.88rem; }
     footer.site { max-width:52rem; margin:2rem auto 0; padding:1rem; border-top:1px solid var(--line); color:var(--mute); font-size:.8rem; }
     footer.site .stamp { margin-bottom:.35rem; }
+    .katalog-note { font:400 .72rem "IBM Plex Mono", monospace; color:var(--mute); margin:.15rem 0 .5rem; }
 
     a.feature-card { display:block; text-decoration:none; color:inherit; }
     a.feature-card:hover { border-color:var(--gold); text-decoration:none; }
@@ -67,61 +79,62 @@
   </style>
 </head>
 <body>
-  <nav class="top" aria-label="Navigering">
+  <nav class="top" data-i18n-aria="nav.aria" aria-label="Navigering">
     <div class="inner">
-      <span class="brand">☦ Hospits</span>
-      <a href="frihet-sudan-guld.html">Nyhet</a>
-      <a href="#kunskap">Kunskap</a>
-      <a href="#jamforelse">Jämförelse</a>
-      <a href="#metoder">Metoder</a>
-      <a href="#stod">Stöd</a>
-      <a href="#donate">Donate</a>
+      <span class="brand" data-i18n="nav.brand">☦ Hospits</span>
+      <a href="frihet-sudan-guld.html" data-i18n="nav.nyhet">Nyhet</a>
+      <a href="#kunskap" data-i18n="nav.kunskap">Kunskap</a>
+      <a href="#jamforelse" data-i18n="nav.jamforelse">Jämförelse</a>
+      <a href="#metoder" data-i18n="nav.metoder">Metoder</a>
+      <a href="#stod" data-i18n="nav.stod">Stöd</a>
+      <a href="#donate" data-i18n="nav.donate">Donate</a>
     </div>
   </nav>
 
   <header class="hero">
-    <p class="stamp">☦ Salomos fattiga riddare · PAPER</p>
-    <h1>Frihetsbibliotek <span class="ox">☦</span></h1>
-    <p class="lede"><b>Messias först.</b> Kunskapens hospits — skydda, undervisa, bjuda in. Stöd via krypto <b>mottagning live</b>. Utbetalning till tredjepart = paper.</p>
+    <p class="stamp" data-i18n="hero.stamp">☦ Salomos fattiga riddare · PAPER</p>
+    <h1><span data-i18n="hero.title">Frihetsbibliotek</span> <span class="ox">☦</span></h1>
+    <p class="lede" data-i18n-html="hero.lede"><b>Messias först.</b> Kunskapens hospits — skydda, undervisa, bjuda in. Stöd via krypto <b>mottagning live</b>. Utbetalning till tredjepart = paper.</p>
   </header>
 
   <section class="block feature-wrap" id="nyhet">
-    <h2>Nyhet · feature</h2>
+    <h2 data-i18n="section.nyhet">Nyhet · feature</h2>
     <a class="feature-card" href="frihet-sudan-guld.html">
       <article class="card feature">
-        <div class="typ">UTKAST · 7 sep 2026 · Sudan</div>
-        <h3>Sudan: vem skapar offren?</h3>
-        <p>Guld finansierar båda sidor. Namngivna generaler: Hemedti/RSF · Burhan/SAF · Al Junaid · UAE som handelsnav (BELAGD). Militärt UAE-stöd OMSTRIDD.</p>
-        <span class="badge">FEATURE · LÄS →</span>
+        <div class="typ" data-i18n="feature.typ">UTKAST · 7 sep 2026 · Sudan</div>
+        <h3 data-i18n="feature.title">Sudan: vem skapar offren?</h3>
+        <p data-i18n="feature.body">Guld finansierar båda sidor. Namngivna generaler: Hemedti/RSF · Burhan/SAF · Al Junaid · UAE som handelsnav (BELAGD). Militärt UAE-stöd OMSTRIDD.</p>
+        <span class="badge" data-i18n="feature.badge">FEATURE · LÄS →</span>
       </article>
     </a>
     <a class="feature-card" href="feature/index.html" style="margin-top:.5rem;display:block">
-      <div class="typ">Serie · 5 artiklar</div>
-      <h3>Sudan · Etiopien · Eritrea (+ Nigeria-regel)</h3>
-      <p>El Fasher · Zamzam · Masalit-retorik · St Arsema · Eritrea FoRB</p>
-      <span class="badge">UTKAST · LÄS →</span>
+      <div class="typ" data-i18n="series.typ">Serie · 5 artiklar</div>
+      <h3 data-i18n="series.title">Sudan · Etiopien · Eritrea (+ Nigeria-regel)</h3>
+      <p data-i18n="series.body">El Fasher · Zamzam · Masalit-retorik · St Arsema · Eritrea FoRB</p>
+      <span class="badge" data-i18n="series.badge">UTKAST · LÄS →</span>
     </a>
   </section>
 
   <section class="block" id="kunskap">
-    <h2>Kunskap</h2>
-    <div class="grid" id="grid-kunskap"><p class="empty">laddar…</p></div>
+    <h2 data-i18n="section.kunskap">Kunskap</h2>
+    <p class="katalog-note" data-i18n="footer.katalogNote">Katalogetiketter är på svenska (paper).</p>
+    <div class="grid" id="grid-kunskap"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
   </section>
 
   <section class="block" id="jamforelse">
-    <h2>Jämförelse</h2>
-    <div class="grid" id="grid-jamforelse"><p class="empty">laddar…</p></div>
+    <h2 data-i18n="section.jamforelse">Jämförelse</h2>
+    <div class="grid" id="grid-jamforelse"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
   </section>
 
   <section class="block" id="metoder">
-    <h2>Metoder</h2>
-    <div class="grid" id="grid-metoder"><p class="empty">laddar…</p></div>
+    <h2 data-i18n="section.metoder">Metoder</h2>
+    <div class="grid" id="grid-metoder"><p class="empty" data-i18n="empty.loading">laddar…</p></div>
   </section>
 
 
   <section class="block" id="stod"><span id="donate" hidden></span>
-    <h2>Stöd · mottagning</h2>
-    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;">Stöd kunskapens hospits / akut behov. Self-custody ÖB. Fel nät = risk. Utbetalning till tredjepart = separat spår.</p>
+    <h2 data-i18n="section.stod">Stöd · mottagning</h2>
+    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;" data-i18n="stod.lede">Stöd kunskapens hospits / akut behov. Self-custody ÖB. Fel nät = risk. Utbetalning till tredjepart = separat spår.</p>
     <div class="grid">
       <article class="card">
         <div class="typ">Bitcoin</div>
@@ -131,7 +144,7 @@
       </article>
       <article class="card">
         <div class="typ">Ethereum</div>
-        <h3>ETH · mainnet</h3>
+        <h3 data-i18n="stod.eth">ETH · mainnet</h3>
         <p class="meta" style="word-break:break-all;user-select:all;">0xcAc9257112E5e3D597f6a36dEA6De1136D7F5d30</p>
         <span class="badge">ERC-20 OK</span>
       </article>
@@ -145,15 +158,17 @@
   </section>
 
   <footer class="site">
-    <p class="stamp">☦ Messias först · icke-våld · krypto-mottagning live · utbetalning paper</p>
-    <p class="mute" id="load-meta">katalog…</p>
+    <p class="stamp" data-i18n="footer.stamp">☦ Messias först · icke-våld · krypto-mottagning live · utbetalning paper</p>
+    <p class="mute" id="load-meta" data-i18n="footer.loading">katalog…</p>
   </footer>
 
+  <script src="i18n.js"></script>
   <script>
     function esc(s){
       return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
     function typLabel(t){
+      if (window.FrihetI18n) return FrihetI18n.typLabel(t);
       return ({person:'Person',tema:'Tema',metod:'Metod',jamforelse:'Jämförelse',plattform:'Plattform',bemotande:'Bemötande',skapare:'Skapare'}[t] || t || 'post');
     }
     function card(p){
@@ -163,17 +178,25 @@
         <span class="badge">${esc((p.status||'paper').toUpperCase())}</span></article>`;
     }
     const INLINE = {"status": "PAPER", "uppdaterad": "2026-09-06", "poster": [{"id": "messias-foretrade", "typ": "metod", "fil": "metoder/messias-foretrade.md", "status": "paper", "etikett": "Metod · Messias företräde"}, {"id": "christian-prince", "typ": "person", "fil": "personer/christian-prince.md", "status": "paper", "etikett": "Person · Christian Prince"}, {"id": "sam-shamoun", "typ": "person", "fil": "personer/sam-shamoun.md", "status": "paper", "etikett": "Person · Sam Shamoun"}, {"id": "dawah-aggressiv", "typ": "tema", "fil": "teman/dawah-aggressiv.md", "status": "paper", "etikett": "Tema · aggressiv dawah"}, {"id": "hadith-verklighetsbas", "typ": "metod", "fil": "teman/hadith-verklighetsbas.md", "status": "paper", "etikett": "Metod · hadith-verklighetsbas"}, {"id": "bemotande-ramverk", "typ": "metod", "fil": "bemotande/ramverk.md", "status": "paper", "etikett": "Bemötande · ramverk"}, {"id": "jamforelse-index", "typ": "jamforelse", "fil": "jamforelse/INDEX.md", "status": "paper", "etikett": "Jämförelse · INDEX / compare-grid"}, {"id": "jamforelse-mall-claim", "typ": "jamforelse", "fil": "jamforelse/mall-claim.md", "status": "paper", "etikett": "Jämförelse · claim-mall", "obligatoriska_fält": ["våldsdeklaration", "lager_3_lagligt_självskydd"]}, {"id": "exempel-apostasi-saknas", "typ": "jamforelse", "fil": "jamforelse/exempel-apostasi-saknas.md", "status": "paper", "etikett": "Jämförelse · exempel apostasipressur (struktur)"}, {"id": "jamforelse-pipeline", "typ": "jamforelse", "fil": "jamforelse/pipeline.md", "status": "paper", "etikett": "Jämförelse · pipeline"}, {"id": "jamforelse-fallacies", "typ": "jamforelse", "fil": "jamforelse/fallacies.md", "status": "paper", "etikett": "Jämförelse · fallacies"}, {"id": "argumentkarta", "typ": "metod", "fil": "metoder/argumentkarta.md", "status": "paper", "etikett": "Metod · argumentkarta"}, {"id": "vald-deklaration", "typ": "metod", "fil": "metoder/vald-deklaration.md", "status": "paper", "etikett": "Metod · våldsdeklaration"}, {"id": "sjalvskydd-vs-aggression", "typ": "metod", "fil": "metoder/sjalvskydd-vs-aggression.md", "status": "paper", "etikett": "Metod · självskydd vs aggression (lager 1/2/3)"}, {"id": "abrogation-naskh", "typ": "metod", "fil": "metoder/abrogation-naskh.md", "status": "paper", "etikett": "Metod · abrogation/naskh (ÖB-lås mild→hård)"}, {"id": "bakat-lagverk", "typ": "metod", "fil": "metoder/bakat-lagverk.md", "status": "paper", "etikett": "Metod · rota bakåt i lagverket"}, {"id": "bokens-folk-bekraftelse-vs-fiende", "typ": "jamforelse", "fil": "jamforelse/bokens-folk-bekraftelse-vs-fiende.md", "status": "paper", "etikett": "Jämförelse · Folket av Boken bekräftelse vs fiende"}, {"id": "argumentkarta-cp-shamoun", "typ": "jamforelse", "fil": "jamforelse/argumentkarta-cp-shamoun.md", "status": "paper", "etikett": "Jämförelse · argumentkarta CP+Shamoun"}, {"id": "plattform-paper", "typ": "plattform", "fil": "PLATTFORM-PAPER.md", "status": "paper", "etikett": "Plattform · kunskaps-UI (paper)"}, {"id": "skapare-index", "typ": "skapare", "fil": "skapare/INDEX.md", "status": "paper", "etikett": "Skapare · INDEX (hylla)"}, {"id": "skapare-exempel-tshirt", "typ": "skapare", "fil": "skapare/exempel-tshirt-PAPER.md", "status": "paper", "etikett": "Skapare · exempel t-shirt PAPER"}, {"id": "ekumeniskt-alexandria", "typ": "tema", "fil": "teman/ekumeniskt-alexandria-PAPER.md", "status": "paper", "etikett": "Tema · ekumeniskt Alexandria"}]};
+    let lastData = INLINE;
     function render(data){
-      const posts = Array.isArray(data.poster) ? data.poster : [];
-      document.getElementById('load-meta').textContent =
-        posts.length + ' poster · ' + (data.uppdaterad||'') + ' · PAPER';
+      lastData = data || lastData;
+      const posts = Array.isArray(lastData.poster) ? lastData.poster : [];
+      const meta = document.getElementById('load-meta');
+      if (window.FrihetI18n) {
+        meta.textContent = FrihetI18n.tf('footer.meta', { n: posts.length, date: lastData.uppdaterad || '' });
+      } else {
+        meta.textContent = posts.length + ' poster · ' + (lastData.uppdaterad||'') + ' · PAPER';
+      }
+      const missing = window.FrihetI18n ? FrihetI18n.t('empty.missing') : 'saknas';
       const put = (id, list) => {
-        document.getElementById(id).innerHTML = list.length ? list.map(card).join('') : '<p class="empty">saknas</p>';
+        document.getElementById(id).innerHTML = list.length ? list.map(card).join('') : '<p class="empty">' + esc(missing) + '</p>';
       };
       put('grid-kunskap', posts.filter(p => ['person','tema','plattform'].includes(p.typ)));
       put('grid-jamforelse', posts.filter(p => p.typ === 'jamforelse'));
       put('grid-metoder', posts.filter(p => p.typ === 'metod' || p.typ === 'bemotande'));
     }
+    document.addEventListener('frihet-lang', () => render(lastData));
     fetch('./frihet-katalog.json?t=' + Date.now(), {cache:'no-store'})
       .then(r => { if (!r.ok) throw 0; return r.json(); })
       .then(render)

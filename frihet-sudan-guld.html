@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sudan: vem skapar offren? · Frihetsbibliotek · UTKAST</title>
+  <title data-i18n-doc="sudan.docTitle">Sudan: vem skapar offren? · Frihetsbibliotek · UTKAST</title>
   <meta name="description" content="UTKAST · namngivna aktörer (Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb) · orsakskedja BELAGD som mönster · inte advokatprodukt." />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <style>
@@ -33,6 +33,17 @@
     nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
     nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
     nav.top a:hover { color:var(--gold-soft); text-decoration:none; }
+    .lang-switch {
+      margin-left:auto; display:inline-flex; align-items:center; gap:.15rem;
+      font:500 .72rem "IBM Plex Mono", monospace; letter-spacing:.04em;
+    }
+    .lang-sep { color:var(--line); user-select:none; padding:0 .05rem; }
+    .lang-btn {
+      background:transparent; border:0; color:var(--mute); cursor:pointer;
+      font:inherit; letter-spacing:.06em; padding:.15rem .3rem; border-radius:4px;
+    }
+    .lang-btn:hover { color:var(--gold-soft); }
+    .lang-btn.is-active { color:var(--gold); box-shadow:inset 0 -1px 0 var(--gold); }
     .hero, section.block, article.prose { max-width:52rem; margin:0 auto; padding:1.2rem 1rem 0; }
     .hero { padding-top:1.6rem; padding-bottom:.35rem; }
     .ox { color:var(--gold); }
@@ -81,25 +92,25 @@
   </style>
 </head>
 <body>
-  <nav class="top" aria-label="Navigering">
+  <nav class="top" data-i18n-aria="nav.aria" aria-label="Navigering">
     <div class="inner">
-      <span class="brand">☦ Hospits</span>
-      <a href="frihet.html">← Frihetsbibliotek</a>
-      <a href="frihet.html#nyhet">Nyhet</a>
-      <a href="#stod">Stöd</a>
+      <span class="brand" data-i18n="nav.brand">☦ Hospits</span>
+      <a href="frihet.html" data-i18n="nav.home">← Frihetsbibliotek</a>
+      <a href="frihet.html#nyhet" data-i18n="nav.nyhet">Nyhet</a>
+      <a href="#stod" data-i18n="nav.stod">Stöd</a>
     </div>
   </nav>
 
   <header class="hero">
-    <p class="stamp">UTKAST · 7 sep 2026 · paper · inte advokatprodukt</p>
-    <h1>Sudan: vem skapar offren? <span class="ox">☦</span></h1>
-    <p class="lede">Namngivna aktörer — Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb. Orsakskedja <b>BELAGD som mönster</b>. Metod: namnge · <i>ibland ≠ alltid</i> · inventera inte citat.</p>
+    <p class="stamp" data-i18n="sudan.navStamp">UTKAST · 7 sep 2026 · paper · inte advokatprodukt</p>
+    <h1><span data-i18n="sudan.title">Sudan: vem skapar offren?</span> <span class="ox">☦</span></h1>
+    <p class="lede" data-i18n-html="sudan.lede">Namngivna aktörer — Hemedti/RSF, Burhan/SAF, Al Junaid, UAE-guldhubb. Orsakskedja <b>BELAGD som mönster</b>. Metod: namnge · <i>ibland ≠ alltid</i> · inventera inte citat.</p>
   </header>
 
   <article class="prose">
-    <h2>Vem skapar offren (NAMNGA)</h2>
+    <h2 data-i18n="sudan.h2.actors">Vem skapar offren (NAMNGA)</h2>
     <table class="claims">
-      <thead><tr><th>Aktör</th><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <thead><tr><th data-i18n="sudan.th.actor">Aktör</th><th data-i18n="sudan.th.claim">Claim</th><th data-i18n="sudan.th.status">Status</th><th data-i18n="sudan.th.source">Källa</th></tr></thead>
       <tbody>
         <tr>
           <td><b>Hemedti / Mohamed Hamdan Dagalo</b> (RSF)</td>
@@ -127,11 +138,11 @@
         </tr>
       </tbody>
     </table>
-    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;">Ansvar där ägande/kontroll finns. Civila i samma folkgrupp ≠ skyldiga.</p>
+    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;" data-i18n="sudan.note.actors">Ansvar där ägande/kontroll finns. Civila i samma folkgrupp ≠ skyldiga.</p>
 
-    <h2>Social bas (ledarskap / rekrytering)</h2>
+    <h2 data-i18n="sudan.h2.social">Social bas (ledarskap / rekrytering)</h2>
     <table class="claims">
-      <thead><tr><th>Organisation</th><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <thead><tr><th data-i18n="sudan.th.org">Organisation</th><th data-i18n="sudan.th.claim">Claim</th><th data-i18n="sudan.th.status">Status</th><th data-i18n="sudan.th.source">Källa</th></tr></thead>
       <tbody>
         <tr>
           <td><b>RSF / Hemedti</b></td>
@@ -147,11 +158,11 @@
         </tr>
       </tbody>
     </table>
-    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;">Inte «alla Rizeigat» / «alla nordaraber». Trupprekrytering blandad.</p>
+    <p class="mute" style="font-size:.88rem;margin-top:-.4rem;" data-i18n="sudan.note.social">Inte «alla Rizeigat» / «alla nordaraber». Trupprekrytering blandad.</p>
 
-    <h2>Offer-mönster</h2>
+    <h2 data-i18n="sudan.h2.victims">Offer-mönster</h2>
     <table class="claims">
-      <thead><tr><th>Claim</th><th>Status</th><th>Källa</th></tr></thead>
+      <thead><tr><th data-i18n="sudan.th.claim">Claim</th><th data-i18n="sudan.th.status">Status</th><th data-i18n="sudan.th.source">Källa</th></tr></thead>
       <tbody>
         <tr>
           <td>Fur, Masalit, Zaghawa m.fl. som mål i miliskampanjer</td>
@@ -166,9 +177,9 @@
       </tbody>
     </table>
 
-    <h2>Orsakskedja (BELAGD som mönster)</h2>
+    <h2 data-i18n="sudan.h2.chain">Orsakskedja (BELAGD som mönster)</h2>
     <table class="claims">
-      <thead><tr><th>#</th><th>Länk</th><th>Status</th></tr></thead>
+      <thead><tr><th>#</th><th data-i18n="sudan.th.link">Länk</th><th data-i18n="sudan.th.status">Status</th></tr></thead>
       <tbody>
         <tr><td>1</td><td><b>Centrum vs periferi</b> — flodelit / SAF mot Darfur-periferi</td><td class="st">BELAGD · översikt</td></tr>
         <tr><td>2</td><td><b>Bashir coup-proof</b> — Janjaweed → RSF</td><td class="st">BELAGD · institutionshistoria</td></tr>
@@ -178,10 +189,10 @@
         <tr><td>6</td><td>Krigsekonomi: gruvor/människor &gt; civila — handling BELAGD; «samvete» OBELAGT</td><td class="st">handling BELAGD · samvete OBELAGT</td></tr>
       </tbody>
     </table>
-    <div class="callout"><b>En rad:</b> Blodet = namngivna generaler, milis, bolag, handelsnav.</div>
+    <div class="callout" data-i18n-html="sudan.callout"><b>En rad:</b> Blodet = namngivna generaler, milis, bolag, handelsnav.</div>
 
-    <h2>Källa</h2>
-    <p class="mute" style="font-size:.9rem;">Underlag (URL:er endast därifrån):<br />
+    <h2 data-i18n="sudan.h2.source">Källa</h2>
+    <p class="mute" style="font-size:.9rem;"><span data-i18n="sudan.sourceLead">Underlag (URL:er endast därifrån):</span><br />
       <code class="path">fonder/frihetsbibliotek/kallor/sudan/PAPER-sudan-guld-aktor-uae.md</code><br />
       Reuters · AP · Global Witness · AFP/France24 · C4ADS · UK GOV · FAO/WFP/UNICEF
     </p>
@@ -189,13 +200,13 @@
 
   
   <section class="block">
-    <h2>ÖB-lås · slutsats</h2>
-    <p class="mute">Spåret som pekar ut <b>vem som ska lida · arbeta · nyttjas</b> är låst. Hierarki + namngivna aktörer. Guld och 2023-bristning driver parallellt — motsäger inte.</p>
+    <h2 data-i18n="sudan.h2.conclusion">ÖB-lås · slutsats</h2>
+    <p class="mute" data-i18n-html="sudan.conclusion">Spåret som pekar ut <b>vem som ska lida · arbeta · nyttjas</b> är låst. Hierarki + namngivna aktörer. Guld och 2023-bristning driver parallellt — motsäger inte.</p>
   </section>
 
   <section class="block" id="stod">
-    <h2>Stöd · mottagning</h2>
-    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;">Krypto <b>live</b> · self-custody ÖB. Utbetalning tredjepart = <b>paper</b>. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.</p>
+    <h2 data-i18n="section.stod">Stöd · mottagning</h2>
+    <p class="mute" style="margin:0 0 .6rem;font-size:.9rem;" data-i18n-html="stod.ledeSudan">Krypto <b>live</b> · self-custody ÖB. Utbetalning tredjepart = <b>paper</b>. ÖB %-lås: <b>40 % mat Sudan</b>. Fel nät = risk.</p>
     <div class="grid">
       <article class="card">
         <div class="typ">Bitcoin</div>
@@ -205,7 +216,7 @@
       </article>
       <article class="card">
         <div class="typ">Ethereum</div>
-        <h3>ETH · mainnet</h3>
+        <h3 data-i18n="stod.eth">ETH · mainnet</h3>
         <p class="meta" style="word-break:break-all;user-select:all;">0xcAc9257112E5e3D597f6a36dEA6De1136D7F5d30</p>
         <span class="badge">ERC-20 OK</span>
       </article>
@@ -219,8 +230,9 @@
   </section>
 
   <footer class="site">
-    <p class="stamp">☦ UTKAST · Messias först · krypto-mottagning live · utbetalning paper</p>
-    <p class="mute"><a href="frihet.html">← Tillbaka till Frihetsbibliotek</a></p>
+    <p class="stamp" data-i18n="footer.stampSudan">☦ UTKAST · Messias först · krypto-mottagning live · utbetalning paper</p>
+    <p class="mute"><a href="frihet.html" data-i18n="footer.back">← Tillbaka till Frihetsbibliotek</a></p>
   </footer>
+  <script src="i18n.js"></script>
 </body>
 </html>

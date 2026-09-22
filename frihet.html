@@ -5,124 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n-doc="doc.title">Frihetsbibliotek · Hospits</title>
   <meta name="description" data-i18n-content="meta.description" content="Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart = separat spår." />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg:#0c0b09; --stone:#17150f; --card:#1a1712; --gold:#c9a24a; --gold-soft:#e6d3a3;
-      --ink:#e8e0d0; --mute:#8f8778; --line:#2e2a22; --wine:#5c2430; --ok:#6f8f72; --danger:#b85a4a;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin:0; color:var(--ink);
-      font:400 16px/1.5 "Source Sans 3", sans-serif;
-      background:
-        radial-gradient(ellipse at 20% 0%, rgba(92,36,48,.2), transparent 45%),
-        radial-gradient(ellipse at 80% 0%, rgba(201,162,74,.12), transparent 40%),
-        var(--bg);
-      padding-bottom:3rem;
-    }
-    a { color:var(--gold-soft); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .stamp { font:500 .72rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.08em; text-transform:uppercase; }
-    h1 { font-family:Fraunces,serif; color:var(--gold-soft); margin:.25rem 0; font-size:clamp(1.7rem,4vw,2.35rem); line-height:1.1; }
-    h2 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:1.15rem; margin:0 0 .6rem; }
-    .mute,.lede { color:var(--mute); }
-    .lede { max-width:36rem; margin:.45rem 0 0; font-size:.95rem; }
-    nav.top {
-      position:sticky; top:0; z-index:20;
-      background:rgba(23,21,15,.52);
-      backdrop-filter:blur(18px) saturate(1.35);
-      -webkit-backdrop-filter:blur(18px) saturate(1.35);
-      border-bottom:1px solid rgba(201,162,74,.28);
-      box-shadow:0 8px 32px rgba(0,0,0,.38), inset 0 1px 0 rgba(230,211,163,.12);
-    }
-    nav.top .inner { max-width:52rem; margin:0 auto; padding:.5rem 1rem; display:flex; gap:.5rem 1rem; align-items:center; flex-wrap:wrap; }
-    nav.top .brand { font:500 .75rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.04em; margin-right:.25rem; }
-    nav.top a { font:500 .78rem "IBM Plex Mono", monospace; color:var(--mute); }
-    nav.top a:hover { color:var(--gold-soft); text-decoration:none; }
-    .lang-switch {
-      margin-left:auto; display:inline-flex; align-items:center; gap:.15rem;
-      font:500 .72rem "IBM Plex Mono", monospace; letter-spacing:.04em;
-    }
-    .lang-sep { color:var(--line); user-select:none; padding:0 .05rem; }
-    .lang-btn {
-      background:transparent; border:0; color:var(--mute); cursor:pointer;
-      font:inherit; letter-spacing:.06em; padding:.15rem .3rem; border-radius:4px;
-    }
-    .lang-btn:hover { color:var(--gold-soft); }
-    .lang-btn.is-active { color:var(--gold); box-shadow:inset 0 -1px 0 var(--gold); }
-    .hero, section.block { max-width:52rem; margin:0 auto; padding:1.4rem 1rem 0; }
-    .hero { padding-top:1.75rem; padding-bottom:.5rem; }
-    .ox { color:var(--gold); }
-    .grid { display:grid; gap:.65rem; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); margin-top:.35rem; }
-    article.card,
-    a.feature-card:not(:has(article.card)) {
-      position:relative; overflow:hidden;
-      background:linear-gradient(165deg, rgba(230,211,163,.10), rgba(23,21,15,.42) 38%, rgba(12,11,9,.55));
-      border:1px solid rgba(201,162,74,.28);
-      border-radius:12px;
-      backdrop-filter:blur(16px) saturate(1.25);
-      -webkit-backdrop-filter:blur(16px) saturate(1.25);
-      box-shadow:inset 0 1px 0 rgba(230,211,163,.22), 0 12px 28px rgba(0,0,0,.32);
-      transition:border-color .22s ease, box-shadow .22s ease, transform .22s ease;
-    }
-    article.card { padding:.85rem .95rem; min-height:5.5rem; }
-    a.feature-card:not(:has(article.card)) { display:block; padding:1rem 1.05rem; margin-top:.5rem; }
-    article.card::after,
-    a.feature-card:not(:has(article.card))::after {
-      content:""; position:absolute; inset:0; pointer-events:none;
-      background:linear-gradient(115deg, transparent 36%, rgba(230,211,163,.16) 48%, transparent 60%);
-      transform:translateX(-130%);
-    }
-    a.card-link, a.feature-card { cursor:pointer; }
-    a.card-link:hover article.card,
-    a.feature-card:hover article.card,
-    article.card:hover,
-    a.feature-card:not(:has(article.card)):hover {
-      border-color:rgba(201,162,74,.75);
-      box-shadow:inset 0 1px 0 rgba(230,211,163,.34), 0 0 0 1px rgba(201,162,74,.28), 0 0 22px rgba(201,162,74,.22), 0 14px 32px rgba(0,0,0,.4);
-      transform:translateY(-2px);
-    }
-    a.card-link:hover article.card::after,
-    a.feature-card:hover article.card::after,
-    article.card:hover::after,
-    a.feature-card:not(:has(article.card)):hover::after { animation:glass-shine .75s ease; }
-    @keyframes glass-shine { from { transform:translateX(-130%); } to { transform:translateX(130%); } }
-    @media (prefers-reduced-motion: reduce) {
-      article.card, a.feature-card:not(:has(article.card)) { transition:none; }
-      article.card::after, a.feature-card:not(:has(article.card))::after { display:none; }
-    }
-    article.card .typ { font:500 .68rem "IBM Plex Mono", monospace; color:var(--gold); letter-spacing:.05em; text-transform:uppercase; }
-    article.card h3 { font-family:Fraunces,serif; color:var(--gold-soft); font-size:.98rem; margin:.2rem 0 .25rem; font-weight:600; }
-    article.card p { margin:0; color:var(--mute); font-size:.86rem; }
-    .meta { font:400 .72rem "IBM Plex Mono", monospace !important; }
-    .badge {
-      display:inline-block; margin-top:.35rem; border:1px solid var(--line);
-      color:var(--mute); border-radius:999px; padding:.12rem .5rem;
-      font:500 .65rem "IBM Plex Mono", monospace;
-    }
-    .empty { color:var(--mute); font-size:.88rem; }
-    footer.site { max-width:52rem; margin:2rem auto 0; padding:1rem; border-top:1px solid var(--line); color:var(--mute); font-size:.8rem; }
-    footer.site .stamp { margin-bottom:.35rem; }
-    .katalog-note { font:400 .72rem "IBM Plex Mono", monospace; color:var(--mute); margin:.15rem 0 .5rem; }
-
-    a.feature-card { display:block; text-decoration:none; color:inherit; }
-    a.feature-card:hover { text-decoration:none; }
-    a.feature-card:hover h3 { text-decoration:underline; }
-    .card-link { display:block; color:inherit; text-decoration:none; }
-    .card-link:hover { text-decoration:none; }
-    .card-link:hover article.card h3 { text-decoration:underline; }
-    .feature-wrap { margin-top:.5rem; }
-    article.card.feature {
-      background:linear-gradient(145deg, rgba(92,36,48,.42), rgba(23,21,15,.48) 55%, rgba(12,11,9,.55));
-      border-color:rgba(201,162,74,.36);
-      min-height:auto; padding:1rem 1.05rem;
-    }
-    article.card.feature h3 { font-size:1.15rem; margin:.25rem 0 .4rem; }
-    article.card.feature p { font-size:.9rem; line-height:1.45; }
-  </style>
-<link rel="stylesheet" href="schema.css" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="top" data-i18n-aria="nav.aria" aria-label="Navigering">
@@ -141,9 +25,12 @@
   </nav>
 
   <header class="hero">
+    <div class="hero-panel">
+      <div class="schema-cross" aria-hidden="true"></div>
     <p class="stamp" data-i18n="hero.stamp">☦ Salomos fattiga riddare</p>
     <h1><span data-i18n="hero.title">Frihetsbibliotek</span> <span class="ox">☦</span></h1>
     <p class="lede" data-i18n-html="hero.lede"><b>Messias först.</b> Kunskapens hospits — skydda, undervisa, bjuda in. Stöd via krypto <b>mottagning live</b>. Utbetalning till tredjepart = separat spår.</p>
+    </div>
   </header>
 
   <section class="block feature-wrap" id="nyhet">

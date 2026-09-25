@@ -109,14 +109,36 @@ h2 {
 .lede { max-width: 40rem; margin: .55rem auto 0; font-size: 1.05rem; }
 .ox { color: var(--gold); font-weight: 600; }
 
-/* Cross pattée */
-.cross-pattee { display: block; width: 1.15rem; height: 1.15rem; }
-.schema-cross {
-  color: var(--crimson);
-  width: 3.4rem;
-  margin: .2rem auto .45rem;
+/* Cross emblem */
+.emblem { display: block; height: auto; }
+.emblem-nav {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: none;
 }
-.schema-cross .cross-pattee { width: 3.4rem; height: 3.4rem; }
+.emblem-seal {
+  width: min(13.5rem, 70%);
+  margin: .1rem auto .45rem;
+  padding: .35rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #140810 0 64%, rgba(20, 8, 16, 0) 74%);
+}
+.emblem-hero { width: 100%; height: auto; }
+.emblem-on-light {
+  width: min(11.5rem, 68%);
+  height: auto;
+  margin: .15rem auto .55rem;
+}
+.emblem-plate {
+  width: min(22rem, 88%);
+  margin: 2.2rem auto 0;
+  padding: 0 1.1rem;
+}
+.emblem-plate img { width: 100%; height: auto; display: block; }
+main.post > .emblem-hero {
+  width: min(10.5rem, 62%);
+  margin: 0 auto .8rem;
+}
 .cross-divider {
   display: flex;
   align-items: center;
@@ -125,7 +147,7 @@ h2 {
   margin: .9rem auto .15rem;
   color: var(--crimson);
 }
-.cross-divider .cross-pattee { width: 1.05rem; height: 1.05rem; flex: none; }
+.cross-divider img { width: 1.35rem; height: 1.35rem; flex: none; }
 .cross-divider::before,
 .cross-divider::after {
   content: "";
@@ -320,12 +342,9 @@ section.block > h2 {
 }
 section.block > h2::before {
   content: "";
-  width: 1.05rem;
-  height: 1.05rem;
-  background-color: var(--gold);
-  -webkit-mask: url("schema/cross-pattee.svg") center / contain no-repeat;
-  mask: url("schema/cross-pattee.svg") center / contain no-repeat;
-  mask-mode: alpha;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("assets/korsemblem-mark-guld.svg") center / contain no-repeat;
 }
 section.block > h2::after {
   content: "";

@@ -79,6 +79,7 @@
       'typ.post': 'post',
 
       'lang.label': 'Språk',
+      'emblem.alt': 'Korsémblem',
       'meta.description': 'Kunskapens hospits — Messias först. Salomos fattiga riddare. Krypto-mottagning live (BTC/ETH/LTC). Utbetalning till tredjepart = separat spår.',
       'doc.title': 'Frihetsbibliotek · Hospits',
 
@@ -191,6 +192,7 @@
       'typ.post': 'post',
 
       'lang.label': 'Language',
+      'emblem.alt': 'Cross emblem',
       'meta.description': 'Hospice of knowledge — Messiah first. Solomon’s poor knights. Crypto reception live (BTC/ETH/LTC). Third-party payout = separate track.',
       'doc.title': 'Freedom Library · Hospice',
 
@@ -303,6 +305,7 @@
       'typ.post': 'запис',
 
       'lang.label': 'Език',
+      'emblem.alt': 'Емблема с кръст',
       'meta.description': 'Хоспис на знанието — Месия първи. Бедните рицари на Соломон. Крипто-прием на живо (BTC/ETH/LTC). Изплащане към трета страна = отделен път.',
       'doc.title': 'Библиотека на свободата · Хоспис',
 
@@ -390,6 +393,12 @@
       var key = el.getAttribute('data-i18n-html');
       if (!key || pack[key] == null && I18N.sv[key] == null) return;
       el.innerHTML = t(key, lang);
+    });
+
+    root.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-alt');
+      if (!key) return;
+      el.setAttribute('alt', t(key, lang));
     });
 
     root.querySelectorAll('[data-i18n-aria]').forEach(function (el) {

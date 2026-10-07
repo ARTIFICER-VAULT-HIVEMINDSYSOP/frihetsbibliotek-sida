@@ -1,6 +1,6 @@
 {
   "status": "PAPER",
-  "uppdaterad": "2026-09-22",
+  "uppdaterad": "2026-10-07",
   "poster": [
     {
       "id": "index",
@@ -92,6 +92,13 @@
       "fil": "jamforelse/cairo-vs-udhr.md",
       "status": "paper",
       "etikett": "Cairo-deklarationen (1990) vs FN:s UDHR (1948)"
+    },
+    {
+      "id": "jamforelse-saudi-cyberbrott-vs-sharia-sivarasa",
+      "typ": "jamforelse",
+      "fil": "jamforelse/saudi-cyberbrott-vs-sharia-sivarasa.md",
+      "status": "utkast",
+      "etikett": "Saudiarabien · cyberbrottslagen art. 6 vs sharia · Sivarasa (Facebook, 2026)"
     },
     {
       "id": "jamforelse-egypten-kopter-dhimmi",
